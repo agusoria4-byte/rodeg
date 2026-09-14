@@ -3,7 +3,7 @@ import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/rodeg/',
+  base: '/',
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'src/components'),
