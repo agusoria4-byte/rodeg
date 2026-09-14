@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/nosotros.css">
+</head>
+<body>
+    {{> header/header }}
+
+    <main class="page-nosotros">
+        
+        <!-- 1. HERO SECTION -->
+        <section class="nosotros-hero auto-reveal">
+            <img src="/public/img/nosotros/ganado.webp" alt="Planta Rodeg" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="nosotros-text-container">
+                <h1 class="nosotros-title">No solo armamos equipos.<br>Fabricamos soluciones para el tambo.</h1>
+            </div>
+        </section>
+
+        <!-- 2. INTRODUCCIÓN Y ESTADÍSTICAS (Diseño Premium) -->
+        <section class="nosotros-intro auto-reveal">
+            <div class="container text-center max-w-900">
+                <span class="subtitle-orange">Nuestra Esencia</span>
+                <h2 class="title-dark">33 años acompañando al productor lechero.</h2>
+                <p class="text-lead">En Rodeg conocemos a la perfección la idiosincrasia y las particularidades del tambo argentino. Sabemos que detrás de cada litro de leche hay esfuerzo, madrugadas y la necesidad de contar con tecnología que no falle.</p>
+            </div>
+
+            <!-- Barra de estadísticas flotante -->
+            <div class="stats-bar-container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">+2000</span>
+                        <span class="stat-text">Tambos atendidos<br>actualmente en el país</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">+40</span>
+                        <span class="stat-text">Agentes y distribuidores<br>oficiales en la red</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">10</span>
+                        <span class="stat-text">Países de exportación,<br>incluyendo Uruguay y Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. INFRAESTRUCTURA Y POTENCIA INDUSTRIAL -->
+        <section class="nosotros-infraestructura auto-reveal">
+            <div class="container">
+                <div class="infra-layout">
+                    <div class="infra-text">
+                        <h2>Independencia industrial para garantizar tu respaldo.</h2>
+                        <p>Hoy nos posicionamos como la mejor opción nacional del mercado. A diferencia de otras marcas, nosotros <strong>fabricamos casi todo lo que ofrecemos</strong>.</p>
+                        <p>Desde nuestra planta industrial de 4.000 m² en El Trébol, Santa Fe, procesamos acero inoxidable, rotomoldeo, caucho y hasta desarrollamos nuestros propios componentes electrónicos.</p>
+                        <div class="highlight-box">
+                            <p>Esa independencia es lo que nos permite garantizar <b>repuestos siempre en stock, servicio técnico propio</b> y una relación imbatible entre precio, calidad y prestación.</p>
+                        </div>
+                    </div>
+                    <div class="infra-image">
+                        <!-- Imagen representativa de la planta o soldadura -->
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Planta Industrial Rodeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. NUESTRO EQUIPO -->
+        <section class="nosotros-equipo auto-reveal">
+            <div class="container">
+                <div class="equipo-header text-center">
+                    <h2>El equipo detrás de la tecnología</h2>
+                    <p>Profesionales comprometidos con el éxito de tu explotación lechera.</p>
+                </div>
+                
+                <div class="equipo-grid">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="/public/img/nosotros/saul-degano-director-rodeg.png" alt="Saul Degano, Director de Rodeg">
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1626265774643-f1943311a86b?w=500&q=80" alt="Miembro del equipo">
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1548695697-3f309ce9f430?w=500&q=80" alt="Miembro del equipo">
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1584907600868-2a9dbcdcd7bd?w=500&q=80" alt="Miembro del equipo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    {{> footer/footer }}
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/components/scroll-reveal.js"></script> <!-- Si usas animaciones -->
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteurizadores | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+  <script type="module" crossorigin src="/assets/global-CZk3iteL.js"></script>
+  <script type="module" crossorigin src="/assets/catalog-grid-CmNZjCB7.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/global-DJ9hBVaC.css">
+  <link rel="stylesheet" crossorigin href="/assets/catalog-grid-Bp5V3yjl.css">
+</head>
+<body>
+    
+    <header>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="var(--color-black)">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    
+        <a href="/" class="logo"><img src="/img/global/logo-rodeg.png" alt="Rodeg logo"></a>
+        
+        <div class="header-content" id="header-content">
+            
+            <!-- Buscador exclusivo para el menú móvil -->
+            <div class="mobile-search-container">
+                <div class="search-pill" style="border: 1px solid var(--color-gray-light); width: 100%; justify-content: space-between;">
+                    <input type="text" placeholder="Buscar..." class="search-input" style="display: block; width: 100%;">
+                    <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </div>
+            </div>
+    
+            <div class="mobile-back-bar" id="mobile-back-bar">
+                <button class="btn-back" id="btn-back">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--color-blue)"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                    <span id="back-text">Volver</span>
+                </button>
+            </div>
+    
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    
+                    <!-- Ítem 1: Productos -->
+                    <li class="nav-item">
+                        <span class="nav-link">Soluciones <span class="arrow-mobile">›</span></span>
+                        
+                        <div class="mega-menu menu-soluciones mega-3-cols">
+                            
+                            <!-- Columna 1: CATEGORÍAS PRINCIPALES (Rutas exactas de tu VSC) -->
+                            <div class="mega-col-1">
+                                <a href="/productos/ordeno/" class="mega-cat-btn active" data-target="panel-ordeno">1. Ordeño <span class="arrow">›</span></a>
+                                <a href="/productos/bretes/" class="mega-cat-btn" data-target="panel-bretes">2. Bretes para sala <span class="arrow">›</span></a>
+                                <a href="/productos/manejo-y-corrales-de-rodeo/" class="mega-cat-btn" data-target="panel-manejo">3. Manejo y corrales <span class="arrow">›</span></a>
+                                <a href="/productos/enfriadores-de-leche/" class="mega-cat-btn" data-target="panel-enfriadores">4. Enfriadores de leche <span class="arrow">›</span></a>
+                                <a href="/productos/alimentacion-ordeno/" class="mega-cat-btn" data-target="panel-alim-ordeno">5. Alimentación ordeño <span class="arrow">›</span></a>
+                                <a href="/productos/alimentacion-terneros/" class="mega-cat-btn" data-target="panel-alim-terneros">6. Alimentación terneros <span class="arrow">›</span></a>
+                                <a href="/productos/confort-animal/" class="mega-cat-btn" data-target="panel-confort">7. Confort animal <span class="arrow">›</span></a>
+                                <a href="/productos/pasteurizadores/" class="mega-cat-btn" data-target="panel-pasteurizadores">8. Pasteurizadores <span class="arrow">›</span></a>
+                                <a href="/categorias.html" class="view-all-link">Ver todo el catálogo →</a>
+                            </div>
+    
+                            <div class="mega-col-content">
+    
+                                <!-- PANEL 1: ORDEÑO -->
+                                <div class="mega-panel active" id="panel-ordeno">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/ordeno/equipos-completos/" class="mega-subcat-btn active" data-target="list-equipos">Equipos Completos <span class="arrow">›</span></a>
+                                        <a href="/productos/ordeno/sistemas-y-repuestos/" class="mega-subcat-btn" data-target="list-sistemas">Sistema, Accesorios... <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-equipos">
+                                            <li><a href="/productos/ordeno/equipos-completos/millenium-magna/index.html">Millenium Magna</a></li>
+                                            <li><a href="/productos/ordeno/equipos-completos/millenium/index.html">Millenium</a></li>
+                                            <li><a href="/productos/ordeno/equipos-completos/mp2700/index.html">MP 2700</a></li>
+                                            <li><a href="/productos/ordeno/equipos-completos/mp2000/index.html">MP 2000</a></li>
+                                            <li><a href="/productos/ordeno/equipos-completos/dtp/index.html">Directo al tarro portátil (DTP)</a></li>
+                                            <li><a href="/productos/ordeno/equipos-completos/dte/index.html">Directo al tarro estacionario (DTE)</a></li>
+                                            <li><a href="/productos/ordeno/equipos-completos/cabras-y-ovejas/index.html">Máquinas ordeñadoras para cabras y ovejas</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-sistemas">
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/grupo-de-ordeño-r-max/index.html">Grupo de ordeño R-Max</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/grupo-de-ordeño-pz-3/index.html">Grupo de ordeño PZ-3</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/pulsador-rg3/index.html">Pulsador RG-3</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/pulmones-de-vacio/index.html">Pulmones de vacio</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/regulacion-de-vacio/index.html">Regulación de vacío</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/sistemas-de-vacio/index.html">Sistemas de vacío</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/electrobombas-centrifugas/index.html">Electrobombas Centrífugas</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/controles-de-nivel/index.html">Controles de nivel</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/intercambiadores-de-calor/index.html">Intercambiadores de calor</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/unidades-finales/index.html">Unidades finales</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/intercambiadores-de-calor/index.html">Intercambiadores de calor</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/ordenador-individual/index.html">Ordenador individual</a></li>                   
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/lavados/index.html">Lavados programables</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/brazo-de-posicionamiento-m18/index.html">Brazos de posicionamiento M-18</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/extractor-automatico-cra4g/index.html">Extractor automático de pezoneras CRA-4G + Brazo de posicionamiento M-18</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/pezoneras/index.html">Pezoneras (Millenium, PZ3, PZ-R MAX)</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/mangueras-y-tubos/index.html">Mangueras, Tubos lácteos y de lavado</a></li>
+                                            <li><a href="/productos/ordeno/sistemas-y-repuestos/bombas-de-vacio/index.html">Bombas de vacío</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 2: BRETES -->
+                                <div class="mega-panel" id="panel-bretes">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/bretes/#a-la-par" class="mega-subcat-btn active" data-target="list-bretes-par">Bretes a la par <span class="arrow">›</span></a>
+                                        <a href="/productos/bretes/#espina-vertical" class="mega-subcat-btn" data-target="list-bretes-espina">Bretes espina vertical <span class="arrow">›</span></a>
+                                        <a href="/productos/bretes/#salida-rapida" class="mega-subcat-btn" data-target="list-bretes-rapida">Bretes salida rápida <span class="arrow">›</span></a>
+                                        <a href="/productos/bretes/#otros" class="mega-subcat-btn" data-target="list-bretes-otros">Otros bretes <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-bretes-par">
+                                            <li><a href="/productos/bretes/#salida-retroceso">Salida en retroceso</a></li>
+                                            <li><a href="/productos/bretes/#salida-lateral">Salida lateral</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-bretes-espina">
+                                            <li><a href="/productos/bretes/#arcos-piso">Arcos a piso</a></li>
+                                            <li><a href="/productos/bretes/#autoportante">Autoportante</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-bretes-rapida">
+                                            <li><a href="/productos/bretes/#lado-lado">Brete Lado x Lado</a></li>
+                                            <li><a href="/productos/bretes/#arcos-piso-rapida">Arcos a piso</a></li>
+                                            <li><a href="/productos/bretes/#autoportante-rapida">Autoportante</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-bretes-otros">
+                                            <li><a href="/productos/bretes/#bretes-autoportantes">Bretes autoportantes</a></li>
+                                            <li><a href="/productos/bretes/#bretes-cabras">Bretes cabras y ovejas</a></li>
+                                            <li><a href="/productos/bretes/#chapon">Chapón anti-bosteo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 3: MANEJO Y CORRALES -->
+                                <div class="mega-panel" id="panel-manejo">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/manejo-y-corrales-de-rodeo/#corrales" class="mega-subcat-btn active" data-target="list-corrales">Corrales de espera <span class="arrow">›</span></a>
+                                        <a href="/productos/manejo-y-corrales-de-rodeo/#cepos" class="mega-subcat-btn" data-target="list-cepos">Cepos y Mangas <span class="arrow">›</span></a>
+                                        <a href="/productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/" class="mega-subcat-btn" data-target="list-tranqueras">Tranqueras y Estabulados <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-corrales">
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#circulares">Corrales circulares</a></li>
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#perimetrales">Corrales perimetrales</a></li>
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#puertas">Puertas apartadoras</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-cepos">
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#cepos-corrales">Cepos para mangas y corrales</a></li>
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#manga">Manga de inseminación</a></li>
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#balanza">Balanza y apartado (Gestión Milk)</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-tranqueras">
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/#tranqueras-manuales">Tranqueras arreadoras manuales</a></li>
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/#tranqueras-automaticas">Tranqueras arreadoras automáticas</a></li>
+                                            <li><a href="/productos/manejo-y-corrales-de-rodeo/#estabulados">Sistemas de estabulados (Camas)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 4: ENFRIADORES -->
+                                <div class="mega-panel" id="panel-enfriadores">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/enfriadores-de-leche/#cubas" class="mega-subcat-btn active" data-target="list-cubas">Cubas <span class="arrow">›</span></a>
+                                        <a href="/productos/enfriadores-de-leche/#sistemas" class="mega-subcat-btn" data-target="list-sistemas-frio">Sistemas y Silos <span class="arrow">›</span></a>
+                                    </div>
+    
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-cubas">
+                                            <li><a href="/productos/enfriadores-de-leche/#cerradas">Cerradas (Tipo cisterna 4.000L a 30.000L)</a></li>
+                                            <li><a href="/productos/enfriadores-de-leche/#abiertas">Abiertas</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-sistemas-frio">
+                                            <li><a href="/productos/enfriadores-de-leche/#comando">Sistema de comando de frío y lavado</a></li>
+                                            <li><a href="/productos/enfriadores-de-leche/#recuperadores">Recuperadores de calor</a></li>
+                                            <li><a href="/productos/enfriadores-de-leche/#silos">Silos para almacenamiento</a></li>
+                                            <li><a href="/productos/enfriadores-de-leche/#instantaneo">Sistema de enfriamiento instantáneo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 5: ALIMENTACIÓN ORDEÑO -->
+                                <div class="mega-panel" id="panel-alim-ordeno">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/alimentacion-ordeno/" class="mega-subcat-btn active" data-target="list-alim-ordeno">Sistemas de alimentación <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-alim-ordeno">
+                                            <li><a href="/productos/alimentacion-ordeno/#manuales">Racionadores manuales</a></li>
+                                            <li><a href="/productos/alimentacion-ordeno/#automatica">Sistema de llenado y dosificación automática</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 6: ALIMENTACIÓN TERNEROS -->
+                                <div class="mega-panel" id="panel-alim-terneros">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/alimentacion-terneros/#taxi-milk" class="mega-subcat-btn active" data-target="list-taxi-milk">Taxi Milk <span class="arrow">›</span></a>
+                                        <a href="/productos/alimentacion-terneros/#carros" class="mega-subcat-btn" data-target="list-carros">Carros de transporte <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-taxi-milk">
+                                            <li><a href="/productos/alimentacion-terneros/#taxi-manual">Manual eléctrico (280L)</a></li>
+                                            <li><a href="/productos/alimentacion-terneros/#taxi-arrastre">De arrastre eléctrico (280L)</a></li>
+                                            <li><a href="/productos/alimentacion-terneros/#taxi-autopropulsado">Autopropulsado eléctrico (280L)</a></li>
+                                            <li><a href="/productos/alimentacion-terneros/#dosificacion">Sistema de dosificación de leche</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-carros">
+                                            <li><a href="/productos/alimentacion-terneros/#carros-transporte">Carros de transporte de leche (500L a 3.000L)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 7: CONFORT ANIMAL -->
+                                <div class="mega-panel" id="panel-confort">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/confort-animal/" class="mega-subcat-btn active" data-target="list-confort">Equipos de confort <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-confort">
+                                            <li><a href="/productos/confort-animal/#ventiladores">Ventiladores R-FAN</a></li>
+                                            <li><a href="/productos/confort-animal/#anti-estres">Sistema anti-estrés</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- PANEL 8: PASTEURIZADORES -->
+                                <div class="mega-panel" id="panel-pasteurizadores">
+                                    <div class="mega-col-2">
+                                        <a href="/productos/pasteurizadores/#tina" class="mega-subcat-btn active" data-target="list-past-tina">Pasteurizador de tina <span class="arrow">›</span></a>
+                                        <a href="/productos/pasteurizadores/#placas" class="mega-subcat-btn" data-target="list-past-placas">Pasteurizador a placas <span class="arrow">›</span></a>
+                                    </div>
+                                    <div class="mega-col-3">
+                                        <ul class="mega-list active" id="list-past-tina">
+                                            <li><a href="/productos/pasteurizadores/#tina-electrico">Eléctrico</a></li>
+                                            <li><a href="/productos/pasteurizadores/#tina-caldera">A caldera</a></li>
+                                        </ul>
+                                        <ul class="mega-list" id="list-past-placas">
+                                            <li><a href="/productos/pasteurizadores/#placas-semiautomatico">Semiautomático</a></li>
+                                            <li><a href="/productos/pasteurizadores/#placas-automatico">Automático</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item">
+                        <span class="nav-link blue-text">Nuevas tecnologías <span class="arrow-mobile">›</span></span>
+                        <div class="mega-menu menu-tecnologias">
+                            <div class="tech-grid">
+                                <div class="tech-card">
+                                    <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80" alt="Medición de leche">
+                                    <div class="tech-card-overlay">
+                                        <h4>Medición de leche</h4>
+                                        <p>Litros, temperatura y alertas por vaca.</p>
+                                    </div>
+                                </div>
+                                <div class="tech-card">
+                                    <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80" alt="Monitoreo animal">
+                                    <div class="tech-card-overlay">
+                                        <h4>Identificación y monitoreo animal</h4>
+                                        <p>Celo, rumia y salud vía aretes.</p>
+                                    </div>
+                                </div>
+                                <div class="tech-card">
+                                    <img src="" alt="Salas rotativas">
+                                    <div class="tech-card-overlay">
+                                        <h4>Salas rotativas</h4>
+                                        <p>Para tambos de gran escala.</p>
+                                    </div>
+                                </div>
+                                <div class="tech-card">
+                                    <img src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80" alt="Taxi milk">
+                                    <div class="tech-card-overlay">
+                                        <h4>Taxi milk autopropulsado</h4>
+                                        <p>Nuevo diseño, control por PLC.</p>
+                                    </div>
+                                </div>
+                                <div class="tech-card">
+                                    <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=500&q=80" alt="Ventiladores">
+                                    <div class="tech-card-overlay">
+                                        <h4>Ventiladores Importados</h4>
+                                        <p>Línea nueva, mayor caudal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="/nosotros.html" class="nav-link">Sobre Rodeg</a>
+                    </li>
+            
+                    <li class="nav-item"><span class="nav-link">Actualidad</span></li>
+                    
+                    <li class="nav-item mobile-only-item">
+                        <a href="/contacto.html" class="btn btn-blue contact-btn-mobile">Contactar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+       <!-- Acciones Globales (Derecha) -->
+        <div class="header-actions">
+            
+            <!-- Buscador -->
+            <div class="search-pill">
+                <input type="text" placeholder="Buscar..." class="search-input">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            
+            <!-- Selector de Idiomas (Oculto/Bloqueado) -->
+            <div class="lang-selector" style="display: none;">
+                <img src="https://flagcdn.com/w20/ar.png" alt="ES" width="20"> 
+                <span class="lang-text">ES</span>
+            </div>
+    
+            <!-- Mi Lista Global (Sobre) -->
+            <div class="inquiry-wrapper">
+                <button class="cart-btn-global" id="open-cart-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span class="cart-btn-text">Mi lista</span> 
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+    
+                <div id="cart-popup-alert" class="cart-popup-alert">
+                    Se ha agregado un producto a tu lista
+                </div>
+    
+                <div class="cart-panel" id="cart-panel">
+                    <div class="cart-panel-header">
+                        <h3>Tu lista de consulta</h3>
+                        <button class="close-cart" id="close-cart-btn">×</button>
+                    </div>
+                    
+                    <div id="cart-items" class="cart-items">
+                        <p class="cart-empty">Todavía no agregaste productos.</p>
+                    </div>
+    
+                    <form id="inquiry-form" class="inquiry-form">
+                        <p class="form-title">Dejanos tus datos para cotizar:</p>
+                        <input type="text" id="inq-name" placeholder="Nombre completo *" required>
+                        <input type="email" id="inq-email" placeholder="Email *" required>
+                        <input type="tel" id="inq-phone" placeholder="Teléfono / WhatsApp *" required>
+                        
+                        <button type="submit" class="btn btn-orange btn-full" id="btn-whatsapp">Consultar por WhatsApp</button>
+                        <button type="button" class="btn btn-blue btn-full" id="btn-mail" style="margin-top: 8px;">Consultar por correo</button>
+                    </form>
+                </div>
+            </div>
+    
+            <a href="/contacto.html" class="btn btn-blue contact-btn-desktop">Contactar</a>
+        </div>
+    </header>
+    <main class="page-catalog">
+        
+        <section class="category-header">
+            <div class="container">
+                <h1>Higiene y Salud</h1>
+                <p>Pasteurizadores</p>
+            </div>
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <span class="current">8. Pasteurizadores</span>
+                </div>
+
+                <p class="nav-title">Categorías</p>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   
+                   <div class="product-grid">
+                        
+                        <div class="product-card auto-reveal" id="pasteurizador-tina-categoria">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&q=80" alt="Pasteurizador de tina" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Pasteurizador de tina</h3>
+                                <p class="product-slogan">Pasteurización segura, sea eléctrica o a caldera tu instalación.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/pasteurizadores/tina/" class="btn-ver-mas">Ver modelos disponibles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card auto-reveal" id="pasteurizador-placas-categoria">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1534073133331-c4f6fb8ea08c?w=500&q=80" alt="Pasteurizador a placas" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Pasteurizador a placas</h3>
+                                <p class="product-slogan">Pasteurizado continuo, sin frenar la producción de tu planta.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/pasteurizadores/placas/" class="btn-ver-mas">Ver modelos disponibles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <div class="footer-col brand-col">
+                    <a href="/" class="footer-logo">
+                        <img src="/img/global/logo-rodeg.png" alt="Rodeg logo" class="logo-rodeg-cambiante">
+                    </a>
+                    <p class="footer-tagline">Tecnología pensada para el tambo argentino. 33 años acompañando al productor lechero.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25zM12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></svg></a>
+                    </div>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="/categorias.html">Soluciones para el tambo</a></li>
+                        <li><a href="#">Nuevas tecnologías</a></li>
+                        <li><a href="#">Sobre Rodeg</a></li>
+                        <li><a href="#">Actualidad y Novedades</a></li>
+                        <li><a href="#">Distribuidores</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Soluciones destacadas</h4>
+                    <ul class="footer-links">
+                        <li><a href="/ordeno.html">Sistemas de ordeño</a></li>
+                        <li><a href="/enfriado.html">Enfriado de leche</a></li>
+                        <li><a href="#">Manejo y contención</a></li>
+                        <li><a href="#">Alimentación automática</a></li>
+                        <li><a href="#">Pasteurización y crianza</a></li>
+                        <li><a href="#">Confort animal</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col contact-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-info">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            <span>San Juan y Ruta 13, CP 2535<br>El Trébol (Sta. Fe) Argentina</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
+                            <span>Tel: +54 (03401) 421075 / 420708<br>Fax: +54 (03401) 420591</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:ventas@rodeg.com.ar" class="contact-email">ventas@rodeg.com.ar</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="footer-container bottom-flex">
+                <p>&copy; 2026 Rodeg. Todos los derechos reservados | Desarrollado por <a href="https://kayso-oficial.com" target="_blank" class="agency-link">KA&SO</a></p>
+                <div class="footer-legal">
+                    <a href="#">Aviso Legal</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <div id="toast" class="toast">
+        <p class="toast-title" id="toast-title"></p>
+        <p class="toast-msg">Agregado a tu lista de cotización.</p>
+    </div>
+
+</body>
+</html>

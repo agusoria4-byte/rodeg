@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentación durante el ordeño | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/catalog-grid.css">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-catalog">
+        
+        <section class="category-header">
+            <div class="container">
+                <h1>Alimentación</h1>
+                <p>Durante el ordeño</p>
+            </div>
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <span class="current">5. Alimentación durante el ordeño</span>
+                </div>
+
+                <p class="nav-title">Categorías</p>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   
+                   <div class="product-grid">
+                        
+                        <div class="product-card auto-reveal" id="racionadores-manuales">
+                            <div class="product-img-wrap">
+                                <img src="/public/img/soluciones/alimentacion-terneros/TAXI MILK.webp" alt="Racionadores manuales" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Racionadores manuales</h3>
+                                <p class="product-slogan">Alimentación ágil y controlada: la ración exacta para cada vaca en segundos.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="#" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Racionadores manuales">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card auto-reveal" id="dosificacion-automatica">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80" alt="Sistema de llenado y dosificación automática" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sistema de llenado y dosificación automática de alimentos</h3>
+                                <p class="product-slogan">Nutrición de precisión: Cada vaca recibe la ración justa, sin que nadie tenga que estar pendiente.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="#" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Sistema de llenado automático">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <div id="toast" class="toast">
+        <p class="toast-title" id="toast-title"></p>
+        <p class="toast-msg">Agregado a tu lista de cotización.</p>
+    </div>
+
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/catalog-grid.js"></script>
+</body>
+</html>

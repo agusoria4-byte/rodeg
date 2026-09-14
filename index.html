@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodeg | Tecnología que cuida tu tambo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/home.css">
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <!-- 1. HERO (Se mantiene igual) -->
+        <section class="hero-container">
+            <img src="/public/img/hero/foto_inicio.webp" alt="Tambo moderno en Argentina" class="hero-bg">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-text-slider">
+                <div class="slide-content" id="hero-slide-content">
+                    <h1 class="hero-title" id="hero-title">Tecnología que cuida tu tambo.</h1>
+                    <p class="hero-sub" id="hero-sub">Ayudamos al productor a ordeñar mejor, cuidar sus vacas y a ganar tiempo con tecnología pensada para el tambo argentino.</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="/contacto.html" class="btn btn-blue">Contactar con nosotros</a>
+                    <a href="/categorias.html" class="btn btn-orange">Productos</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. EXPLORÁ RODEG -->
+        <section class="home-categories-section">
+            <div class="section-heading text-center">
+                <h2>Soluciones integrales para tu campo</h2>
+                <p>Todo lo que necesitás para potenciar tu tambo, diseñado y fabricado con excelencia.</p>
+            </div>
+            
+            <div class="home-card-grid">
+                <a href="categorias.html" class="home-card">
+                    <img src="/public/img/hero/soluciones-rodeg.webp" alt="Soluciones">
+                    <div class="home-card-overlay">
+                        <h4>Soluciones</h4>
+                        <p>Todo lo que tu tambo necesita.</p>
+                    </div>
+                </a>
+                
+                <a href="/productos/nuevas-tecnologias/index.html" class="home-card">
+                    <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80" alt="Nuevas Tecnologías">
+                    <div class="home-card-overlay">
+                        <h4>Nuevas tecnologías</h4>
+                        <p>Medición, collares y automatización.</p>
+                    </div>
+                </a>
+                
+                <a href="/nosotros.html" class="home-card">
+                    <img src="/public/img/hero/rodeg-portada.webp" alt="Sobre Rodeg">
+                    <div class="home-card-overlay">
+                        <h4>Sobre Rodeg</h4>
+                        <p>Diseño y fabricación nacional.</p>
+                    </div>
+                </a>
+                
+                <a href="/actualidad.html" class="home-card">
+                    <img src="https://images.unsplash.com/photo-1621252179022-772cbe9b7365?w=800&q=80" alt="Actualidad">
+                    <div class="home-card-overlay">
+                        <h4>Actualidad</h4>
+                        <p>Noticias, eventos y capacitación.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. ACERCA DE NOSOTROS -->
+        <section class="home-about-section">
+            <div class="about-container">
+                <div class="about-img-wrap">
+                    <!-- Video con autoplay, loop y optimizado para SEO -->
+                    <video 
+                        autoplay 
+                        muted 
+                        loop 
+                        playsinline 
+                        width="100%" 
+                        loading="lazy"
+                        aria-label="Rodeg - Fabricación y venta de ordeñadoras en Argentina"
+                        title="Rodeg - Fabricación y venta de ordeñadoras en Argentina">
+                        <source src="/public/img/hero/rodeg-fabrica.mp4" type="video/mp4">
+                        Tu navegador no soporta el video. Rodeg: venta de ordeñadoras en Argentina.
+                    </video>
+                </div>
+                <div class="about-text-wrap">
+                    <span class="about-overline">Conocé Rodeg</span>
+                    <h2>Ingeniería con propósito para el campo argentino</h2>
+                    <p>Somos una empresa con más de tres décadas de trayectoria dedicadas exclusivamente a entender y resolver las necesidades del productor lechero. Diseñamos, fabricamos e instalamos tecnología robusta y confiable que asegura la sanidad de tus animales y la rentabilidad de cada ordeño.</p>
+                    <a href="/nosotros.html" class="btn-link-arrow">Descubra más &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. NUEVAS TECNOLOGÍAS (Fondo es el Carrusel) -->
+        <section class="home-tech-section" id="tech-carousel-section">
+            <!-- Difuminado superior e inferior -->
+            <div class="tech-fade-top"></div>
+            <div class="tech-fade-bottom"></div> 
+
+
+            <div class="tech-container">
+                <h2 class="tech-main-title"><b>Nueva Tecnología</b> para tu tambo</h2>
+                
+                <div class="tech-layout">
+                    <!-- Panel Transparente Derecho flotando -->
+                    <div class="glass-form-panel">
+                        <h3>Asesoramiento Especializado</h3>
+                        <p>Dejanos tus datos para cotizar equipamiento de última generación.</p>
+                        
+                        <form>
+                            <input type="text" placeholder="Nombre y Apellido">
+                            <input type="tel" placeholder="Teléfono / WhatsApp">
+                            <input type="email" placeholder="Correo electrónico">
+                            <textarea placeholder="Escribí tu consulta..." rows="3"></textarea>
+                            
+                            <button type="submit" class="btn btn-orange btn-full">Solicitar cotización</button>
+                            
+                            <div class="divider">
+                                
+                                <span>O comunicate directo</span>
+                            </div>
+                            
+                            <a href="https://wa.me/5493401421075" target="_blank" class="btn btn-outline-white btn-full">
+                                Consultar por WhatsApp
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. NOTICIAS DE ACTUALIDAD -->
+        <section class="home-news-section">
+            <div class="news-white-box">
+                <div class="news-header">
+                    <h2>Noticias de la <b>actualidad</b></h2>
+                    <a href="/actualidad.html" class="view-all">Ver todas las noticias</a>
+                </div>
+                
+                <div class="news-grid">
+                    <!-- Noticia Principal (Izquierda) -->
+                    <div class="news-card main-news">
+                        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=80" alt="Noticia 1">
+                        <div class="news-content">
+                            <span class="news-date">25.10.2024</span>
+                            <h3>Lanzamiento del nuevo sistema de identificación inteligente para rodeos</h3>
+                            <p>Descubrí cómo los nuevos aretes electrónicos permiten monitorear la salud y el celo de cada vaca en tiempo real...</p>
+                            <!-- Nuevo botón elegante -->
+                            <a href="#" class="btn-link-elegant">Leer más ➔</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticias Secundarias (Derecha) -->
+                    <div class="news-side-col">
+                        <div class="news-card small-news">
+                            <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80" alt="Noticia 2">
+                            <div class="news-content">
+                                <span class="news-date">12.09.2024</span>
+                                <h4>Mantenimiento preventivo de pulsadores</h4>
+                                <a href="#" class="btn-link-elegant">Leer más ➔</a>
+                            </div>
+                        </div>
+                        <div class="news-card small-news">
+                            <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=500&q=80" alt="Noticia 3">
+                            <div class="news-content">
+                                <span class="news-date">05.08.2024</span>
+                                <h4>Estrategias para mitigar el estrés calórico</h4>
+                                <a href="#" class="btn-link-elegant">Leer más ➔</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. NUEVO CTA FINAL  -->
+        <section class="home-cta-section bottom-cta">
+            <div class="cta-card-wrapper">
+                <div class="text-center">
+                    <h2>¿Necesitás ayuda con tu proyecto?</h2>
+                    <p>Nuestros asesores técnicos están listos para brindarte soporte, orientarte en la elección del equipo ideal y acompañar el crecimiento de tu explotación lechera.</p>
+                    
+                    <div class="cta-actions">
+                        <!-- Colores minimalistas y sofisticados -->
+                        <a href="/contacto.html" class="btn btn-dark">Conversar ahora</a>
+                        <a href="/distribuidores.html" class="btn btn-outline">Nuestros distribuidores</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    {{> footer/footer }}
+
+    <script type="module" src="/src/js/pages/home.js"></script>
+</body>
+</html>

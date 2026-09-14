@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confort animal | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/catalog-grid.css">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-catalog">
+        
+        <section class="category-header">
+            <div class="container">
+                <h1>Confort</h1>
+                <p>Animal</p>
+            </div>
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <span class="current">7. Confort animal</span>
+                </div>
+
+                <p class="nav-title">Categorías</p>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   
+                   <div class="product-grid">
+                        
+                        <div class="product-card auto-reveal" id="ventiladores-rfan">
+                            <div class="product-img-wrap">
+                                <img src="/public/img/tecnologia/ventilador-r-fan-1240-rodeg.webp" alt="Ventiladores R-FAN" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Ventiladores R-FAN</h3>
+                                <p class="product-slogan">Cuando baja el calor de su tambo, sube la producción..</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/confort-animal/r-fan/index.html" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Ventiladores R-FAN">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card auto-reveal" id="sistema-antiestres">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500&q=80" alt="Sistema anti-estrés" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sistema anti-estrés</h3>
+                                <p class="product-slogan">Menos estrés calórico, más litros en el tanque.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="#" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Sistema anti-estrés">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <div id="toast" class="toast">
+        <p class="toast-title" id="toast-title"></p>
+        <p class="toast-msg">Agregado a tu lista de cotización.</p>
+    </div>
+
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/catalog-grid.js"></script>
+</body>
+</html>

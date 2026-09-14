@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordeñadora Millenium | Rodeg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                <a href="/productos/ordeno/equipos-completos/index.html">2. Ordeño - Equipos Completos</a> &nbsp;›&nbsp; 
+                <span class="current">Millenium</span>
+            </div>
+
+            <!-- 1. HERO -->
+            <div class="product-hero auto-reveal">
+                
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=1200&q=80" alt="Ordeñadora Millenium">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" class="gal-thumb active" alt="Thumb 1">
+                        <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=150&q=80" class="gal-thumb" alt="Thumb 2">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" class="gal-thumb" alt="Thumb 3">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Millenium</h1>
+                    <p class="hero-slogan">Ordeño fluido, protección de la ubre y lavado eficiente.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Recibidor vertical de 70 litros, generosas dimensiones de tuberías</li>
+                        <li>Gran turbulencia en el lavado</li>
+                        <li>Nueva pulsación electrónica RG 3</li>
+                        <li>Opcional: Medición electrónica GLOBAL FLOW CONTROL y lavado automático programable por PLC</li>
+                        <li>Opcional: Regulación de vacío electrónica con variador de frecuencia (ahorro de energía)</li>
+                        <li>Opcional: Control de electrobomba por variador de frecuencia (eficiencia energética)</li>
+                    </ul>
+
+                    <span class="variant-title">Versión del equipo: <strong id="variant-name" style="color: var(--color-black);">Millenium Estándar</strong></span>
+                    <div class="variant-thumbnails">
+                        <!-- Enlace apuntando a la Magna -->
+                        <a href="/productos/ordeno/equipos-completos/millenium-magna/" class="variant-thumb" data-name="Millenium Magna">
+                            <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=150&q=80" alt="Magna">
+                        </a>
+                        <!-- Variante actual (Activa) -->
+                        <a href="#" class="variant-thumb active" data-name="Millenium Estándar">
+                            <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" alt="Estándar">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                        <a href="#" class="action-link"> </a>
+                    </div>
+                    
+                    <!-- TEXTO OCULTO -->
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            Nuevo diseño de unidad final con recibidor vertical de 70 litros y trampa sanitaria de 20 litros con lavado incorporado. La descarga de leche es por electrobomba centrífuga sanitaria con control de nivel electrónico por flotante magnético.<br><br>
+                            Las bombas de vacío de gran capacidad están diseñadas para máxima confiabilidad y consumo racional de energía. El regulador de vacío servo asistido responde con rapidez y bajo consumo, garantizando un nivel de vacío estable durante todo el ordeño. El lavado CIP con inyección de aire de comando electrónico es totalmente regulable en tiempos y frecuencia.
+                        </p>
+                    </div>
+
+                    <!-- BOTÓN PRINCIPAL -->
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20inmediata%20de%20la%20ordenadora%20Millenium." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Millenium')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. CARACTERÍSTICAS TÉCNICAS -->
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Unidad final</strong>
+                        <span>70 litros</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Trampa sanitaria</strong>
+                        <span>20 litros</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Grupo de ordeño</strong>
+                        <span>PZ-MAX</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Regulador de vacío</strong>
+                        <span>Servo asistido</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Lavado</strong>
+                        <span>CIP con inyección de aire electrónica</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+                <button id="btn-more-specs" class="btn-view-more-specs" style="display: none;">Ver más características</button>
+            </div>
+
+            <!-- 3. CÓMO FUNCIONA -->
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Mirá el paso a paso</h2>
+                            <p>Descubrí cómo la Millenium agiliza los tiempos de tu fosa.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80">
+                                    <summary>1. Ordeño con vacío estable</summary>
+                                    <div class="accordion-content">El regulador servoasistido monitorea y compensa el nivel de vacío de forma eficiente y segura. Los grupos de ordeño PZ-max, de gran capacidad de evacuación aseguran un ordeño uniforme desde la primera hasta la última vaca, reduciendo el estrés en el pezón.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80">
+                                    <summary>2. Descarga y control de nivel</summary>
+                                    <div class="accordion-content">A medida que el recibidor de 70 litros colecta la leche, los sensores electrónicos activan la electrobomba centrífuga sanitaria. El líquido se transfiere suavemente hacia el tanque de enfriamiento sin romper la grasa ni generar espuma.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=800&q=80">
+                                    <summary>3. Lavado CIP automático</summary>
+                                    <div class="accordion-content">Al finalizar la jornada, el comando electrónico inicia el ciclo CIP. El sistema combina agua con pulsos de aire a presión, creando un efecto de "tapón" hidráulico que golpea y limpia las paredes internas del lactoducto de manera autónoma.</div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- 5. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                
+                <div class="carousel-mockup" id="contenedor-relacionados" data-ids="millenium-magna, pulsador-rg3, global-flow-control">
+                </div>
+            </div>
+
+        </div> <!-- Cierra product-page-container -->
+    </main> <!-- Cierra main -->
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

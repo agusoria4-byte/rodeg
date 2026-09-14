@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazos de posicionamiento M-18 | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                <a href="/productos/ordeno/sistemas-y-repuestos/">Sistemas y Repuestos</a> &nbsp;›&nbsp; 
+                <span class="current">Brazos M-18</span>
+            </div>
+
+            <!-- 1. HERO -->
+            <div class="product-hero auto-reveal">
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=1200&q=80" alt="Brazos de posicionamiento M-18">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=150&q=80" class="gal-thumb active" alt="Thumb 1">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" class="gal-thumb" alt="Thumb 2">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Brazos de posicionamiento M-18</h1>
+                    <p class="hero-slogan">Ordeñe sin tener que sostener el equipo con la mano todo el tiempo.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Acomoda el grupo de ordeño respecto a la ubre en la posición óptima para un ordeño suave y parejo.</li>
+                        <li>Despeja la zona de trabajo en la fosa, permitiendo al operario atender más vacas a la vez.</li>
+                        <li>Estructura 100% de acero inoxidable: máxima higiene y alta resistencia al movimiento del animal.</li>
+                    </ul>
+
+                    <span class="variant-title">Componente: <strong id="variant-name" style="color: var(--color-black);">Brazos M-18</strong></span>
+                    <div class="variant-thumbnails">
+                        <a href="#" class="variant-thumb active" data-name="Brazos M-18">
+                            <img src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=150&q=80" alt="Brazos">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+                    
+                    <!-- TEXTO OCULTO -->
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            El Brazo de Posicionamiento M-18 de RODEG es una herramienta de ingeniería ergonómica diseñada para estabilizar la rutina en salas de ordeño de media y alta producción. Fabricado íntegramente en acero inoxidable de grado sanitario, su función principal es contrarrestar el peso desparejo y las tensiones que ejercen las mangueras de conducción sobre las pezoneras.<br><br>
+                            Al mantener el grupo de ordeño perfectamente centrado y alineado debajo de la vaca, elimina los desbalances de succión que causan ordeños incompletos, previene caídas accidentales por deslizamiento de vacío y resguarda los componentes de las habituales patadas en la fosa.
+                        </p>
+                    </div>
+
+                    <!-- BOTÓN PRINCIPAL -->
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20de%20Brazos%20de%20posicionamiento%20M-18." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Brazos M-18')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. CARACTERÍSTICAS TÉCNICAS -->
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Material</strong>
+                        <span>Acero inoxidable de alta resistencia y terminación sanitaria.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Función</strong>
+                        <span>Soporte, nivelación y posicionamiento adecuado del grupo de ordeño.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Compatibilidad</strong>
+                        <span>Diseñado para trabajar de forma independiente o integrarse de forma nativa con el sistema de extracción automática CRA-4G.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Tipo de anclaje o articulación</strong>
+                        <span>Soportes provistos por Rodeg adaptables a todo tipo de instalaciones y líneas de leche.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+                <button id="btn-more-specs" class="btn-view-more-specs" style="display: none;">Ver más características</button>
+            </div>
+
+            <!-- 3. CÓMO FUNCIONA -->
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Mirá el paso a paso</h2>
+                            <p>Despejá tu fosa y protejé la ergonomía de la rutina.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80">
+                                    <summary>1. Posicionamiento asistido</summary>
+                                    <div class="accordion-content">Al ingresar la vaca a la fosa y realizarse la preparación de los pezones, el operario desplaza el brazo articulado M-18, el cual direcciona el grupo de ordeño justo debajo del eje central de la ubre.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80">
+                                    <summary>2. Ordeño simétrico y libre de tensiones</summary>
+                                    <div class="accordion-content">Durante toda la bajada de leche, el brazo absorbe el torque y la tirantez de las mangueras principales. Esto garantiza que las cuatro pezoneras ejerzan exactamente la misma presión vertical, permitiendo una extracción fluida y uniforme sin estrangular ningún cuarto.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=800&q=80">
+                                    <summary>3. Retiro y resguardo elevado</summary>
+                                    <div class="accordion-content">Una vez finalizada la extracción, el brazo facilita un desprendimiento limpio. Al mantener el grupo suspendido a una altura segura de la fosa, impide que las pezoneras toquen el suelo sucio o sean pisadas por el animal antes de que el operario lo retire.</div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN CASOS DE USO ELIMINADA -->
+
+           <!-- 5. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                
+                <div class="carousel-mockup" id="contenedor-relacionados" data-ids="extractor-cra4g, grupo-rmax-v2">
+                </div>
+            </div>
+
+        </div> <!-- Cierra product-page-container -->
+    </main> <!-- Cierra main -->
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

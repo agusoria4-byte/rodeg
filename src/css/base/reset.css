@@ -1,0 +1,24 @@
+/* ================= RESET & GLOBALS ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--font-light);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    flex-grow: 1;
+}
+
+a { text-decoration: none; }
+ul { list-style: none; }

@@ -1,0 +1,281 @@
+/* ================= CONTENEDOR PRINCIPAL ================= */
+.product-page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* ================= HERO DEL PRODUCTO (Diseño Editorial) ================= */
+.product-hero {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    align-items: stretch;
+}
+
+.hero-gallery {
+    flex: 1.8;
+    display: flex;
+    gap: 15px;
+    max-width: 650px; /* AGREGADO: Tope de ancho para que no crezca al infinito en pantallas grandes */
+}
+
+.main-image-container {
+    width: 100%; /* Asegura que el contenedor abarque todo el espacio disponible */
+}
+
+.main-image-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* ACÁ ESTÁ LA CLAVE: Fuerza el formato cuadrado exacto */
+    object-fit: cover; /* Asegura que la imagen llene el cuadrado sin deformarse */
+    border-radius: 8px;
+    max-height: 75vh; /* AGREGADO: Evita que la imagen sea más alta que la ventana y corte el header */
+}
+
+.gallery-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70px;
+}
+.gal-thumb {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.gal-thumb.active, .gal-thumb:hover { opacity: 1; }
+
+.hero-info {
+    flex: 1;
+    padding-left: 3rem;
+    border-left: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-info h1 { font-size: 2.8rem; color: var(--color-black); font-weight: var(--font-regular); margin-bottom: 0.5rem; line-height: 1.1; }
+.hero-slogan { font-size: 1.1rem; color: #555; margin-bottom: 2rem; }
+
+.hero-features { margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.08); }
+.hero-features li { font-size: 0.95rem; color: #333; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; }
+.hero-features li::before { content: '-'; color: var(--color-black); font-weight: bold; }
+/* Variantes */
+.variant-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #777; margin-bottom: 10px; display: block; }
+.variant-thumbnails { display: flex; gap: 12px; margin-bottom: 2.5rem; }
+.variant-thumb {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--color-gray-light);
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    transition: border-color 0.2s;
+    background: var(--color-white);
+    padding: 2px;
+}
+.variant-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.variant-thumb:hover { border-color: #999; }
+.variant-thumb.active { border-color: var(--color-blue); pointer-events: none; }
+
+/* Botones */
+.action-links-inline { display: flex; gap: 2rem; margin-bottom: 1.5rem; }
+.action-link { color: var(--color-black); font-weight: 500; font-size: 0.95rem; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; cursor: pointer; background: none; border: none; padding: 0; }
+.action-link:hover { border-bottom-color: var(--color-black); }
+
+/* BOTÓN OSCURO Y REDONDEADO */
+.btn-consult-dark { 
+    display: block; 
+    text-align: center; 
+    background-color: #172dad;
+    color: var(--color-white); 
+    padding: 16px; 
+    font-size: 1.1rem; 
+    font-weight: 500; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    margin-bottom: 0rem;
+    transition: opacity 0.3s, transform 0.2s;
+}
+.btn-consult-dark:hover { opacity: 0.9; color: var(--color-white); transform: translateY(-2px); }
+
+.link-add-list { color: var(--color-black); font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; cursor: pointer; background: none; border: none; }
+.link-add-list:hover { text-decoration: underline; }
+
+/* ================= CARACTERÍSTICAS TÉCNICAS (Grid Fijo 4 Columnas) ================= */
+.specs-section { padding: 4rem 0; }
+.specs-section h2 { font-size: 1.5rem; color: var(--color-blue); margin-bottom: 3rem; }
+
+/* Cambiamos flex por grid para forzar siempre 4 columnas */
+.specs-row { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem; 
+    align-items: start;
+}
+
+.spec-minimal { 
+    border-left: 1px solid rgba(0,0,0,0.1); 
+    padding-left: 1.5rem; 
+    /* Permite que el texto baje a la siguiente línea dentro de su columna */
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+.spec-minimal strong { display: block; font-size: 0.85rem; text-transform: uppercase; color: var(--color-black); margin-bottom: 5px; letter-spacing: 0.5px; }
+.spec-minimal span { font-size: 0.95rem; color: #666; line-height: 1.4; display: block; }
+
+/* Ocultar elementos a partir del 5to por defecto */
+.specs-row .spec-minimal:nth-child(n+5) {
+    display: none;
+}
+/* Clase activa para mostrar todos (se activa mediante JS) */
+.specs-row.show-all .spec-minimal:nth-child(n+5) {
+    display: block;
+}
+
+/* Botón Ver Más de Características */
+.btn-view-more-specs {
+    display: table;
+    margin: 2.5rem auto 0;
+    background: transparent;
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+    padding: 10px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn-view-more-specs:hover {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+/* Responsive para que no se aprieten en pantallas chicas */
+@media (max-width: 990px) {
+    .specs-row { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 2rem; }
+}
+@media (max-width: 600px) {
+    .specs-row { grid-template-columns: 1fr; }
+}
+
+/* ================= FONDOS A PANTALLA COMPLETA ================= */
+.bg-full-dark {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #0c185c;
+    color: var(--color-white);
+    padding: 6rem 0;
+}
+
+.bg-full-light {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #f8f9fa;
+    padding: 6rem 0;
+}
+
+.bg-full-light h3 { color: #666 !important; font-weight: bold; }
+.bg-full-light h2.blog-title { color: var(--color-blue) !important; }
+.related-section h2 { color: var(--color-blue) !important; }
+
+/* ================= CÓMO FUNCIONA (Oscuro) ================= */
+.how-it-works-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+
+/* --- SOLUCIÓN IMAGEN CUADRADA PASO A PASO --- */
+.how-it-works-img img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px; /* Opcional: le da un toque redondeado moderno */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Opcional: le da un poco de profundidad */
+}
+
+.bg-full-dark h2 { font-size: 3rem; font-weight: var(--font-light); margin-bottom: 0.5rem; color: var(--color-white); }
+.bg-full-dark p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 3rem; }
+
+.accordion-dark details { border-bottom: 1px solid rgba(255,255,255,0.15); padding: 15px 0; }
+.accordion-dark summary { font-size: 1.2rem; font-weight: 500; color: var(--color-white); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; }
+.accordion-dark summary::-webkit-details-marker { display: none; }
+.accordion-dark summary::after { content: '+'; font-size: 1.5rem; color: var(--color-white); font-weight: 300; }
+.accordion-dark details[open] summary::after { content: '−'; }
+.accordion-dark .accordion-content { padding-top: 15px; color: rgba(255,255,255,0.7); line-height: 1.6; font-size: 1rem; }
+
+/* ================= BLOG / CLIENTES (Claro y Corporativo) ================= */
+.blog-content { text-align: center; max-width: 900px; margin: 0 auto; }
+.blog-title { font-size: 2.5rem; color: var(--color-blue); margin-bottom: 1rem; }
+.blog-desc { font-size: 1.1rem; color: #555; margin-bottom: 2rem; }
+.blog-link { color: var(--color-black); font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--color-black); padding-bottom: 2px; font-size: 0.95rem; }
+.blog-image { margin-top: 3rem; width: 100%; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+
+/* ================= PRODUCTOS RELACIONADOS (Tarjetas Cuadradas) ================= */
+.related-section { padding: 5rem 0; text-align: center; overflow: hidden; }
+.related-section h2 { font-size: 2rem; color: var(--color-blue); margin-bottom: 4rem; text-transform: uppercase; letter-spacing: 2px; }
+
+.carousel-mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permite que bajen de línea si la pantalla es chica */
+}
+
+.rel-card {
+    width: 320px; 
+    /* aspect-ratio: 1 / 1; <-- ELIMINAR ESTA LÍNEA */
+    background: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.rel-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: translateY(-4px); /* Pequeño efecto de elevación al pasar el mouse */
+}
+
+.rel-img { 
+    width: 100%; 
+    aspect-ratio: 1 / 1; /* <-- AGREGAR AQUÍ EL CUADRADO */
+    object-fit: cover; /* Cambiar a cover para llenar el espacio */
+    background-color: #fff;
+}
+
+.rel-info { 
+    padding: 1.2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #fdfdfd; 
+    border-top: 1px solid rgba(0,0,0,0.04);
+    min-height: 85px; /* Asegura que la caja de texto siempre mida lo mismo */
+}
+.rel-text { flex: 1; padding-right: 15px; }
+.rel-text h4 { font-size: 1.05rem; color: var(--color-black); margin-bottom: 4px; }
+/* Limita el texto a 2 líneas y agrega "..." si es más largo, manteniendo la estructura intacta */
+.rel-text p { font-size: 0.85rem; color: #777; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+.rel-btn { padding: 8px 16px; background: rgba(0,0,0,0.05); color: var(--color-black); border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; white-space: nowrap; transition: 0.3s; }
+.rel-btn:hover { background: var(--color-black); color: var(--color-white); }
+
+@media (max-width: 990px) {
+    .product-hero { flex-direction: column; }
+    .hero-info { padding-left: 0; border-left: none; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 2rem; }
+    .how-it-works-layout { grid-template-columns: 1fr; }
+}

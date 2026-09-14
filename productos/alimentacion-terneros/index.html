@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentación de terneros | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/catalog-grid.css">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-catalog">
+        
+        <section class="category-header">
+            <div class="container">
+                <h1>Alimentación</h1>
+                <p>De Terneros</p>
+            </div>
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <span class="current">6. Alimentación de terneros</span>
+                </div>
+
+                <p class="nav-title">Categorías</p>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   
+                   <div class="product-grid">
+                        
+                        <div class="product-card auto-reveal" id="taxi-milk-categoria">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80" alt="Taxi milk" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Taxi milk</h3>
+                                <p class="product-slogan">La leche justa, a la temperatura justa, en cada guachera.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/alimentacion-terneros/taxi-milk/" class="btn-ver-mas">Ver modelos disponibles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card auto-reveal" id="dosificacion-leche">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80" alt="Sistema de dosificación de leche" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sistema de dosificación de leche</h3>
+                                <p class="product-slogan">Nutrición sin desperdicios: la porción exacta para la cría de terneros.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="#" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Sistema de dosificación de leche">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card auto-reveal" id="carros-transporte">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80" alt="Carros de transporte de leche" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Carros de transporte de leche</h3>
+                                <p class="product-slogan">Logística a gran escala: traslada miles de litros a la guachera con total rapidez y máxima sanidad.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="#" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Carros de transporte de leche">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <div id="toast" class="toast">
+        <p class="toast-title" id="toast-title"></p>
+        <p class="toast-msg">Agregado a tu lista de cotización.</p>
+    </div>
+
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/catalog-grid.js"></script>
+</body>
+</html>

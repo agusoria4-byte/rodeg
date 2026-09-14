@@ -1,0 +1,68 @@
+/* ================= CONTACT SECTION ================= */
+.contact-section { padding: 4rem 2%; background-color: #f8f9fa; }
+
+.contact-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: 1fr 1.2fr; 
+    gap: 2rem 3rem; 
+    align-items: start; 
+    /* Esta es la magia: en PC definimos dónde va cada bloque */
+    grid-template-areas: 
+        "intro form"
+        "details form";
+}
+
+/* Asignamos las áreas a cada div */
+.contact-intro { grid-area: intro; }
+.contact-form-wrapper { grid-area: form; }
+.company-details { grid-area: details; }
+
+/* Textos iniciales */
+.contact-intro h2 { font-size: 2.5rem; font-weight: var(--font-light); color: var(--color-blue); margin-bottom: 1.5rem; }
+.contact-overline { display: block; font-size: 0.8rem; font-weight: var(--font-regular); color: var(--color-orange); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+.contact-intro p { font-size: 1.1rem; line-height: 1.6; color: #555; }
+
+/* Detalles e iconos azules */
+.company-details { padding-top: 1rem; }
+.detail-item { font-size: 1rem; margin-bottom: 1rem; color: #333; }
+.detail-item strong { font-weight: var(--font-regular); color: var(--color-black); display: inline-block; vertical-align: middle; }
+.detail-item a { color: var(--color-blue); transition: color 0.3s ease; }
+.detail-item a:hover { color: var(--color-orange); }
+.detail-item .contact-icon { color: var(--color-blue); margin-right: 10px; font-size: 1.1rem; vertical-align: middle; }
+
+/* Formulario (Estilos base) */
+.contact-form-wrapper { background-color: var(--color-white); padding: 2.5rem; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.07); }
+.contact-form .form-row { display: flex; gap: 1.5rem; }
+.contact-form .form-row .form-group { flex: 1; }
+.contact-form .form-group { margin-bottom: 1.5rem; }
+.contact-form label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: var(--font-regular); color: #444; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"], .contact-form textarea, .contact-form select { width: 100%; padding: 12px 15px; border: 1px solid var(--color-gray-light); border-radius: 8px; font-family: inherit; font-size: 1rem; font-weight: var(--font-light); transition: border-color 0.3s, box-shadow 0.3s; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { outline: none; border-color: var(--color-blue); box-shadow: 0 0 0 3px rgba(23, 45, 173, 0.15); }
+.contact-form textarea { resize: vertical; }
+
+/* ================= RESPONSIVE / MOBILE ================= */
+@media (max-width: 900px) {
+    .contact-container { 
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        /* Reordenamos la grilla para celulares: Textos -> Formulario -> Sede */
+        grid-template-areas: 
+            "intro"
+            "form"
+            "details";
+    }
+    
+    /* Agregamos márgenes laterales para que respire en pantallas chicas */
+    .contact-section { padding: 3rem 5%; }
+    
+    /* Reducimos el padding de la caja blanca del formulario */
+    .contact-form-wrapper { padding: 1.5rem; }
+    
+    /* Rompemos el flex para que los inputs no se amontonen uno al lado del otro */
+    .contact-form .form-row { flex-direction: column; gap: 0; }
+    
+    /* Pequeño ajuste visual para la zona de datos */
+    .company-details { padding-top: 1.5rem; border-top: 1px solid var(--color-gray-light); }
+}

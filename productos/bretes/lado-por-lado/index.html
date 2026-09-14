@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brete Lado x Lado | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/catalog-grid.css">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-catalog">
+        
+        <!-- ENCABEZADO CON LA FRASE MARKETINERA -->
+        <section class="category-header">
+            <div class="container">
+                <h1>Brete Lado x Lado</h1>
+                <p>Máxima densidad de animales y posicionamiento a 90 grados para un ordeño rápido, seguro y altamente eficiente.</p>
+            </div>
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <a href="/productos/bretes/index.html">2. Bretes para sala</a> &nbsp;›&nbsp; 
+                    <span class="current">Brete Lado x Lado</span>
+                </div>
+
+                <p class="nav-title">Categorías</p>
+                <!-- Aquí se inyecta el menú lateral dinámicamente -->
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   
+                   <div class="product-grid">
+                        
+                        <!-- 1. Brete Lado por Lado - Arcos a Piso -->
+                        <div class="product-card auto-reveal" id="brete-lado-piso">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80" alt="Brete Lado por Lado - Arcos a Piso" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Brete Lado por Lado - Arcos a Piso</h3>
+                                <p class="product-slogan">Densidad máxima y fijación ultra robusta: optimizá tu fosa al límite con anclaje estructural clásico.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/bretes/lado-por-lado/arcos-piso/index.html" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Brete Lado por Lado - Arcos a Piso">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Brete Lado por Lado - Autoportantes -->
+                        <div class="product-card auto-reveal" id="brete-lado-autoportante">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&q=80" alt="Brete Lado por Lado - Autoportantes" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Brete Lado por Lado - Autoportantes</h3>
+                                <p class="product-slogan">Diseño suspendido de alta gama: máxima concentración de vacas con un piso 100% libre de caños.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/bretes/lado-por-lado/autoportante/index.html" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Brete Lado por Lado - Autoportantes">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <div id="toast" class="toast">
+        <p class="toast-title" id="toast-title"></p>
+        <p class="toast-msg">Agregado a tu lista de cotización.</p>
+    </div>
+
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/catalog-grid.js"></script>
+</body>
+</html>

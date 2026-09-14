@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/contacto.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-contacto">
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Bloque 1: Introducción -->
+                <div class="contact-intro">
+                    <span class="contact-overline">Atención Comercial y Soporte</span>
+                    <h2>Contacto Institucional</h2>
+                    <p>Envíenos su solicitud de cotización o inquietud técnica. Nuestro equipo especializado le responderá a la brevedad.</p>
+                </div>
+
+                <!-- Bloque 2: Formulario (Ahora el CSS lo pondrá en el medio en celulares) -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre </label>
+                                <input type="text" id="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido </label>
+                                <input type="text" id="apellido" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empresa">Razón Social / Establecimiento </label>
+                            <input type="text" id="empresa" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email corporativo </label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono </label>
+                                <input type="tel" id="telefono" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="localidad">Localidad y CP </label>
+                                <input type="text" id="localidad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pais">País </label>
+                                <select id="pais" required>
+                                    <option value="Argentina" selected>Argentina</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Consulta </label>
+                            <textarea id="mensaje" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-orange btn-full">Enviar consulta</button>
+                    </form>
+                </div>
+
+                <!-- Bloque 3: Detalles (Sede, tel, fax, email) -->
+                <div class="company-details">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-map-marker-alt contact-icon"></i>
+                        <strong>Sede Central:</strong><br>
+                        San Juan y Ruta 13, CP 2535<br>
+                        El Trébol, Santa Fe, Argentina.
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-phone contact-icon"></i>
+                        <strong>Teléfonos:</strong><br>
+                        +54 (03401) 421075 / 420708
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-fax contact-icon"></i>
+                        <strong>Fax:</strong><br>
+                        +54 (03401) 420591
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-envelope contact-icon"></i>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:info@rodeg.com.ar">info@rodeg.com.ar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    {{> footer/footer }}
+
+    <script type="module" src="/src/js/pages/contacto.js"></script>
+</body>
+</html>

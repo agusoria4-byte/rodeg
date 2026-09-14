@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordeñadora MP 2700 | Rodeg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                <a href="/productos/ordeno/equipos-completos/index.html">2. Ordeño - Equipos Completos</a> &nbsp;›&nbsp; 
+                <span class="current">MP 2700</span>
+            </div>
+
+            <!-- 1. HERO -->
+            <div class="product-hero auto-reveal">
+                
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=1200&q=80" alt="Ordeñadora MP 2700">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" class="gal-thumb active" alt="Thumb 1">
+                        <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" class="gal-thumb" alt="Thumb 2">
+                        <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=150&q=80" class="gal-thumb" alt="Thumb 3">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>MP 2700</h1>
+                    <p class="hero-slogan">El primer paso hacia la tecnificación del ordeño. Vacío estable, precisión y bajo consumo en cada bajada de tu sala de ordeño.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Ordeño rápido y sin lastimar el pezón, gracias a la ergonomía de la pezonera triangular (PZ-3), ideal para rodeos de alta producción.</li>
+                        <li>Estabilidad absoluta con mínimo consumo, equipada con un regulador servoasistido que responde al instante y consume apenas 10 L/min de aire.</li>
+                        <li>Diseño modular y escalable con opciones de configuración de bombas, cañerías y opcionales tecnológicos según el tamaño y presupuesto de tu tambo.</li>
+                    </ul>
+
+                    <span class="variant-title">Versión de la línea MP: <strong id="variant-name" style="color: var(--color-black);">MP 2700</strong></span>
+                    <div class="variant-thumbnails">
+                        <!-- Variante actual (Activa) -->
+                        <a href="#" class="variant-thumb active" data-name="MP 2700">
+                            <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" alt="MP 2700">
+                        </a>
+                        <!-- Enlace apuntando a la MP 2000 (Falta crear la carpeta, dejo la ruta preparada) -->
+                        <a href="/productos/ordeno/equipos-completos/mp2000/" class="variant-thumb" data-name="MP 2000">
+                            <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=150&q=80" alt="MP 2000">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                        <a href="#" class="action-link"> </a>
+                    </div>
+                    
+                    <!-- TEXTO OCULTO -->
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            La Ordeñadora MP 2700 es una solución muy recomendable en sistemas de línea media en fosa para establecimientos que buscan alta eficiencia y versatilidad. Su corazón operativo combina el confort animal del grupo de ordeño PZ-MAX con la precisión de un regulador servoasistido de gran capacidad de respuesta. El equipo cuenta con un recibidor vertical de 60 litros y una trampa sanitaria de 20 litros con lavado incorporado. Gracias a sus múltiples opciones de diámetros de cañería y potencias de bomba, permite diseñar una sala de ordeño perfectamente personalizada y lista para incorporar tecnología avanzada cuando lo decidas.
+                        </p>
+                    </div>
+
+                    <!-- BOTÓN PRINCIPAL -->
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20inmediata%20de%20la%20ordenadora%20MP%202700." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('MP 2700')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. CARACTERÍSTICAS TÉCNICAS -->
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Recibidor final</strong>
+                        <span>Vertical de 60 litros</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Trampa sanitaria</strong>
+                        <span>20 litros, lavado incorporado</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Opciones de cañería</strong>
+                        <span>Simple: 50, 63, 75 o 101 mm</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Bomba de vacío</strong>
+                        <span>900 / 1.650 / 2.200 L/min</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Tipos de pulsación</strong>
+                        <span>Electrónica (alt. o alt. dif.)</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Módulos opcionales</strong>
+                        <span>Retiradores auto. y lavado auto.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+                <button id="btn-more-specs" class="btn-view-more-specs" style="display: none;">Ver más características</button>
+            </div>
+
+            <!-- 3. CÓMO FUNCIONA -->
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Mirá el paso a paso</h2>
+                            <p>Descubrí cómo la MP 2700 agiliza los tiempos de tu fosa.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=800&q=80">
+                                    <summary>1. Regulación de vacío de bajo consumo</summary>
+                                    <div class="accordion-content">El regulador servo asistido responde con rapidez y consume apenas 10 litros por minuto, manteniendo el vacío estable durante todo el ordeño.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80">
+                                    <summary>2. Ordeñe con grupo PZ-3</summary>
+                                    <div class="accordion-content">Las pezoneras triangulares masajean el pezón de forma homogénea bajo el régimen de pulsación seleccionado, logrando ordeño suave y veloz y sin agresiones físicas.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80">
+                                    <summary>3. Descarga y lavado</summary>
+                                    <div class="accordion-content">La leche fluye por las cañerías hacia el recibidor de 60 litros, desde donde una potente electrobomba centrífuga sanitaria (de 1 o 1,5 HP) la impulsa directamente al tanque de frío. Al finalizar, la trampa sanitaria de 20 litros asiste al circuito para proteger las unidades generadoras de vacío.</div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                
+                <div class="carousel-mockup" id="contenedor-relacionados" data-ids="pulsador-rg3, grupo-rmax">
+                </div>
+            </div>
+
+        </div> <!-- Cierra product-page-container -->
+    </main> <!-- Cierra main -->
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

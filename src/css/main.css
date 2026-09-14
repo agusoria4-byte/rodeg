@@ -1,0 +1,9 @@
+/* ================= ARCHIVO MAESTRO ================= */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/animations.css';
+
+/* Importamos los componentes globales */
+@import './components/buttons.css';
+@import './components/header.css';
+@import './components/footer.css';

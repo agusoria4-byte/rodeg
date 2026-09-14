@@ -1,0 +1,31 @@
+/* ================= BOTONES ================= */
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-family: inherit;
+    font-weight: var(--font-regular);
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+    color: var(--color-white);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-blue {
+    background-color: var(--color-blue);
+}
+
+.btn-orange {
+    background-color: var(--color-orange);
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 14px 30px;
+}

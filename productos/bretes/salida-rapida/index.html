@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bretes salida rápida | RODEG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css">
+</head>
+<body>
+
+     {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp;
+                <a href="/productos/instalaciones/">Instalaciones</a> &nbsp;›&nbsp;
+                <a href="/productos/instalaciones/bretes/">Bretes</a> &nbsp;›&nbsp;
+                <span class="current">Bretes salida rápida</span>
+            </div>
+
+            <!-- 1. HERO -->
+            <div class="product-hero auto-reveal">
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=1200&q=80" alt="Bretes salida rápida">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Bretes salida rápida</h1>
+                    <p class="hero-slogan">Menos tiempo de espera entre tandas de ordeñe.</p>
+
+                    <ul class="hero-features">
+                        <li>Todas las vacas salen al mismo tiempo</li>
+                        <li>Menos tiempo muerto entre grupos</li>
+                        <li>Ideal para tambos con varias tandas por turno</li>
+                    </ul>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            La salida rápida es un mecanismo de liberación simultánea: en vez de soltar a las vacas una por una, abre paso a toda la tanda al mismo tiempo apenas termina el ordeñe del grupo. En tambos con varias tandas por turno, esa liberación conjunta agiliza el recambio entre grupos y reduce los tiempos muertos, sumando minutos productivos a lo largo del día.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20inmediata%20de%20Bretes%20salida%20rápida." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. CARACTERÍSTICAS TÉCNICAS -->
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal"><strong>Liberación</strong><span>Simultánea por tanda</span></div>
+                    <div class="spec-minimal"><strong>Mecanismo de apertura</strong><span>A confirmar con RODEG</span></div>
+                    <div class="spec-minimal"><strong>Origen</strong><span>Diseño RODEG</span></div>
+                </div>
+            </div>
+
+            <!-- 3. CÓMO FUNCIONA -->
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Cómo funciona</h2>
+                            <p>Descubrí el paso a paso de este sistema.</p>
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open><summary>1. Ordeñe de la tanda completa</summary><div class="accordion-content">Se completa el ordeñe de todas las vacas del grupo, con cada una en su bretes correspondiente.</div></details>
+                                <details name="funcionamiento"><summary>2. Apertura simultánea</summary><div class="accordion-content">Al finalizar el ordeñe de todo el grupo, el mecanismo libera a todas las vacas de la tanda al mismo tiempo, en vez de ir soltándolas una por una, agilizando el recambio hacia la siguiente tanda.</div></details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                <div class="carousel-mockup">
+                    <div class="rel-card"><div class="rel-info"><div class="rel-text"><h4>Bretes a la par</h4></div></div></div>
+                        <div class="rel-card"><div class="rel-info"><div class="rel-text"><h4>Tranqueras arreadoras</h4></div></div></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    {> footer/footer }
+
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

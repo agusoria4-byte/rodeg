@@ -1,0 +1,11 @@
+/* ================= VARIABLES ================= */
+:root {
+    --color-blue: #172dad;
+    --color-orange: #f76507;
+    --color-black: #111112;
+    --color-white: #faf9f8;
+    --color-gray-light: #e5e5e5;
+    
+    --font-light: 300;
+    --font-regular: 400;
+}

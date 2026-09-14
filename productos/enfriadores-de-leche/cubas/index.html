@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubas de Enfriamiento | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/catalog-grid.css">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-catalog">
+        
+        <section class="category-header">
+            <div class="container">
+                <h1>Cubas</h1>
+                <p>Dos formas de enfriar tu leche, la misma calidad en las dos.</p>
+            </div>
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <a href="/productos/enfriadores-de-leche/">4. Enfriadores de leche</a> &nbsp;›&nbsp; 
+                    <span class="current">Cubas</span>
+                </div>
+
+                <p class="nav-title">Subcategorías</p>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   <div class="product-grid">
+
+                        <!-- Cubas Cerradas -->
+                        <div class="product-card auto-reveal" id="cubas-cerradas">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80" alt="Cubas Cerradas" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Cubas Cerradas</h3>
+                                <p class="product-slogan">Hasta 8.000 litros, con la higiene de un sistema cerrado.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/enfriadores-de-leche/cubas/cerradas/" class="btn-ver-mas">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cubas Abiertas -->
+                        <div class="product-card auto-reveal" id="cubas-abiertas">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80" alt="Cubas Abiertas" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Cubas Abiertas</h3>
+                                <p class="product-slogan">Control visual absoluto y una limpieza profunda al alcance de tu mano.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/enfriadores-de-leche/cubas/abiertas/" class="btn-ver-mas">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/catalog-grid.js"></script>
+</body>
+</html>

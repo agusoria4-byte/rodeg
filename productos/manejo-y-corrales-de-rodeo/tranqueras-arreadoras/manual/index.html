@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranquera de arreo manual | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                <a href="/productos/ordeno/sistemas-y-repuestos/">Sistemas y Repuestos</a> &nbsp;›&nbsp; 
+                <a href="/productos/ordeno/sistemas-y-repuestos/tranqueras-arreadoras/">Tranqueras arreadoras</a> &nbsp;›&nbsp; 
+                <span class="current">Tranquera de arreo manual</span>
+            </div>
+
+            <!-- 1. HERO -->
+            <div class="product-hero auto-reveal">
+                
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <!-- Imagen de referencia genérica (actualizar luego con las fotos antiguas que mencionaste) -->
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=1200&q=80" alt="Tranquera de arreo manual">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" class="gal-thumb active" alt="Vista principal">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Tranquera de arreo manual</h1>
+                    <p class="hero-slogan">Guiar a tus vacas nunca fue tan fácil y liviano.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Se accionan a mano, guiando el movimiento del rodeo hacia la sala de ordeño sin necesidad de ningún sistema eléctrico o neumático.</li>
+                        <li>Diseño liviano y balanceado que permite un empuje fácil, rápido y sin desgastarte.</li>
+                        <li>Guía al animal sin necesidad de forzarlo y reduce su estrés durante el arreo.</li>
+                        <li>Te permite concentrarte exclusivamente en el ordeño, sin tener que interrumpir tu tarea para buscar el ganado.</li>
+                        <li>Complementa cualquier tipo de brete.</li>
+                    </ul>
+
+                    <span class="variant-title">Tipo: <strong id="variant-name" style="color: var(--color-black);">Manual</strong></span>
+                    <div class="variant-thumbnails">
+                        <a href="#" class="variant-thumb active" data-name="Manual">
+                            <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" alt="Manual">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+                    
+                    <!-- TEXTO OCULTO -->
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            Se instala en el corral de acceso, justo antes de la sala de ordeño. Es una estructura diseñada para acompañar el movimiento natural de los animales de forma tranquila y ordenada. Funciona de manera autónoma, permitiendo ordenar el avance del rodeo a mano sin requerir ningún tipo de conexión eléctrica o neumática.
+                        </p>
+                    </div>
+
+                    <!-- BOTÓN PRINCIPAL -->
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20sobre%20la%20Tranquera%20de%20arreo%20manual." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Tranquera de arreo manual')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. CARACTERÍSTICAS TÉCNICAS -->
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Funcionamiento</strong>
+                        <span>Manual, mediante empuje balanceado.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Estructura</strong>
+                        <span>Estructura liviana de alta resistencia.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Medidas y capacidades</strong>
+                        <span>Hacemos la tranquera que vos necesitás, a la medida de tu corral.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. CÓMO FUNCIONA -->
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Mirá el paso a paso</h2>
+                            <p>Arreo tranquilo y sin esfuerzo para que las vacas entren solas.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80">
+                                    <summary>1. Guía tranquila del rodeo</summary>
+                                    <div class="accordion-content">Se instala en el corral de acceso y el operario guía el movimiento del rodeo hacia la sala de ordeño de forma tranquila y ordenada, sin esfuerzo físico gracias a su diseño equilibrado.</div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                
+                <div class="carousel-mockup" id="contenedor-relacionados" data-ids="bretes-salida-rapida, pisos-de-goma">
+                </div>
+            </div>
+
+        </div> 
+    </main> 
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

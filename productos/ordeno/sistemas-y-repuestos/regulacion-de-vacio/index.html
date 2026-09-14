@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulación de vacío | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    
+                <a href="/productos/ordeno/sistemas-y-repuestos/">Sistemas y Repuestos</a> &nbsp;›&nbsp; 
+                <span class="current">Regulación de vacío</span>
+            </div>
+
+            <div class="product-hero auto-reveal">
+                
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=1200&q=80" alt="Regulación de vacío">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=150&q=80" class="gal-thumb active" alt="Thumb 1">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" class="gal-thumb" alt="Thumb 2">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Regulación de vacío</h1>
+                    <p class="hero-slogan">Vacío estable, para proteger la ubre en cada bajada.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Tres tecnologías adaptadas a tu tambo: a resorte, a contrapeso y válvula reguladora servoasistida, adaptándose con precisión al presupuesto y escala de tu establecimiento.</li>
+                        <li>Reacción inmediata para mantener la presión estable, sin importar cuántas bajadas estén trabajando.</li>
+                        <li>Bajo consumo en las versiones servo asistidas.</li>
+                        <li>Opcional (Vacío Instantáneo): Comando mediante variador de frecuencia y presostato electrónico. Acelera y desacelera según demanda, ahorrando gran cantidad de energía en grandes salas.</li>
+                    </ul>
+
+                    <span class="variant-title">Componente: <strong id="variant-name" style="color: var(--color-black);">Reguladores</strong></span>
+                    <div class="variant-thumbnails">
+                        <a href="#" class="variant-thumb active" data-name="Reguladores">
+                            <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=150&q=80" alt="Regulador">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+                    
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            El sistema de regulación de vacío RODEG es el encargado de mantener la estabilidad neumática absoluta de la sala, garantizando que la fuerza de succión permanezca estrictamente dentro del rango seguro para los animales. Su función es clave para evitar lesiones mamarias: si el nivel de vacío fluctúa, el ordeño se vuelve ineficiente y agresivo.<br><br>
+                            Con la línea de reguladores de RODEG (que abarca desde la precisión milimétrica del sistema servoasistido de bajo consumo hasta la robustez tradicional de las versiones a resorte y contrapeso), cada productor se asegura un flujo constante de aire adaptado al número de bajadas activas de su fosa.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20sobre%20Sistemas%20de%20Regulacion%20de%20vacio." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Regulación de vacío')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Tipos disponibles</strong>
+                        <span>A resorte (económico), A contrapeso (confiable para equipos simples), Servoasistido (alta sensibilidad, bajo consumo).</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Capacidad de respuesta</strong>
+                        <span>La mejor capacidad de respuesta la tiene la opción servoasistida.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Capacidades en lts/min</strong>
+                        <span>A resorte: 500 lts/min | A contrapeso: 1.000 lts/min | Servoasistida: 3.500 y 5.000 lts/min.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+                
+                <button id="btn-more-specs" class="btn-view-more-specs" style="display: none;">Ver más características</button>
+            </div>
+
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Mirá el paso a paso</h2>
+                            <p>El control exacto que tu sistema de ordeño necesita.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=800&q=80">
+                                    <summary>1. Sensado del nivel de vacío</summary>
+                                    <div class="accordion-content">El regulador detecta el nivel de vacío del sistema en tiempo real, comparándolo constantemente con el nivel objetivo o deseado.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=800&q=80">
+                                    <summary>2. Ajuste automático</summary>
+                                    <div class="accordion-content">Cuando se conectan más unidades de ordeño o se produce una entrada abrupta de aire en la fosa, el regulador reacciona al instante abriendo o cerrando sus válvulas internas de manera proporcional para compensar.</div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                <div class="carousel-mockup">
+                    
+                    <div class="rel-card">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=500&q=80" alt="Bombas de vacío" class="rel-img">
+                        <div class="rel-info">
+                            <div class="rel-text">
+                                <h4>Bombas de vacío</h4>
+                                <p>Generación de succión estable.</p>
+                            </div>
+                            <a href="/productos/ordeno/sistemas-y-repuestos/bombas-de-vacio/index.html" class="rel-btn">Ver más ➔</a>
+                        </div>
+                    </div>
+
+                    <div class="rel-card">
+                        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&q=80" alt="Pulmones de vacío" class="rel-img">
+                        <div class="rel-info">
+                            <div class="rel-text">
+                                <h4>Pulmones de vacío</h4>
+                                <p>Amortiguación para todo el sistema.</p>
+                            </div>
+                            <a href="/productos/ordeno/sistemas-y-repuestos/pulmones/index.html" class="rel-btn">Ver más ➔</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

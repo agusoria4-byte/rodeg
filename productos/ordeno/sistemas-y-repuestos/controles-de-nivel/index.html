@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de nivel | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                  
+                <a href="/productos/ordeno/sistemas-y-repuestos/">Sistemas y Repuestos</a> &nbsp;›&nbsp; 
+                <span class="current">Controles de nivel</span>
+            </div>
+
+            <div class="product-hero auto-reveal">
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=1200&q=80" alt="Controles de nivel">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=150&q=80" class="gal-thumb active" alt="Thumb 1">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" class="gal-thumb" alt="Thumb 2">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Controles de nivel</h1>
+                    <p class="hero-slogan">Un control para una evacuación de leche segura y eficiente.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Confiablidad total al evitar problemas de rebalses.</li>
+                        <li>Parte clave a la hora de salvaguardar la higiene del sistema de generación de vacío.</li>
+                        <li>Accionamiento magnético y de voltaje reducido, lo que lo hace muy seguro en cuanto a riesgo de sobrecargas.</li>
+                    </ul>
+
+                    <span class="variant-title">Componente: <strong id="variant-name" style="color: var(--color-black);">Control de Nivel</strong></span>
+                    <div class="variant-thumbnails">
+                        <a href="#" class="variant-thumb active" data-name="Control de Nivel">
+                            <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=150&q=80" alt="Control">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+                    
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            El Control de Nivel de RODEG es un componente de seguridad biológica y operativa fundamental para estabilizar la rutina de la fosa. Su misión principal es coordinar de forma inteligente el llenado y vaciado del recibidor final.<br><br>
+                            Al detectar de manera autónoma cuando el nivel de leche alcanza el punto óptimo, arranca la electrobomba para transferir el producto hacia las placas de frío, apagándola inmediatamente cuando el recipiente se vacía. Esta acción precisa evita que la leche sufra sobreagitación (lo que alteraría su grasa y generaría espuma) y previene rebalses críticos que podrían descompensar el vacío de la sala y estresar las ubres del rodeo.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20sobre%20Controles%20de%20nivel." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Controles de nivel')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Función</strong>
+                        <span>Monitoreo automatizado del nivel de llenado máximo y mínimo de la unidad final, comandando directamente electrobomba de descarga.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Detalle técnico</strong>
+                        <span>Accionado por flotante magnético.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+                <button id="btn-more-specs" class="btn-view-more-specs" style="display: none;">Ver más características</button>
+            </div>
+
+            <!-- SECCIÓN CÓMO FUNCIONA ELIMINADA -->
+
+           <!-- 5. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                
+                <div class="carousel-mockup" id="contenedor-relacionados" data-ids="electrobombas-centrifugas, unidades-finales">
+                </div>
+            </div>
+
+        </div> <!-- Cierra product-page-container -->
+    </main> <!-- Cierra main -->
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

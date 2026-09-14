@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapón anti-bosteo | RODEG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp;  
+                <a href="/productos/instalaciones/manejo/">Manejo y corrales</a> &nbsp;›&nbsp; 
+                <span class="current">Chapón anti-bosteo</span>
+            </div>
+
+            <!-- 1. HERO -->
+            <div class="product-hero auto-reveal">
+                
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=1200&q=80" alt="Chapón anti-bosteo">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=150&q=80" class="gal-thumb active" alt="Thumb 1">
+                        <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" class="gal-thumb" alt="Thumb 2">
+                        <img src="https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=150&q=80" class="gal-thumb" alt="Thumb 3">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Chapón anti-bosteo</h1>
+                    <p class="hero-slogan">Máxima higiene en la fosa, protegiendo al operario durante toda la jornada.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Barrera eficaz que evita salpicaduras de bosta y orina hacia la zona de trabajo</li>
+                        <li>Diseño liso y resistente que se limpia en segundos con manguera</li>
+                        <li>Asegura un entorno de ordeñe mucho más limpio, higiénico y profesional</li>
+                    </ul>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+                    
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            El chapón anti-bosteo es un accesorio clave para la higiene de la sala. Se instala en la estructura del brete para actuar como escudo protector frente a los desechos del animal, manteniendo al tambero a salvo de salpicaduras molestas y facilitando las condiciones de salubridad durante el ordeñe.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20inmediata%20de%20Chap%C3%B3n%20anti-bosteo." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Chapón anti-bosteo')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. CARACTERÍSTICAS TÉCNICAS -->
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal"><strong>Función</strong><span>Protección contra salpicaduras e higiene del operario.</span></div>
+                    <div class="spec-minimal"><strong>Compatibilidad</strong><span>Falta información - a confirmar</span></div>
+                    <div class="spec-minimal"><strong>Material</strong><span>Chapa de alta resistencia (galvanizada o acero inoxidable a confirmar).</span></div>
+                    <div class="spec-minimal"><strong>Origen</strong><span>Diseño RODEG</span></div>
+                </div>
+            </div>
+
+            <!-- 3. CÓMO FUNCIONA -->
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Cómo funciona</h2>
+                            <p>Descubrí el paso a paso de este sistema.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80"><summary>1. Instalación en el brete</summary><div class="accordion-content">El chapón se ajusta a la estructura del brete, reforzando los puntos que podrían moverse durante el manejo del ganado.</div></details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. PRODUCTOS RELACIONADOS -->
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                <div class="carousel-mockup">
+                    <div class="rel-card">
+                        <img src="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80" alt="Bretes a la par" class="rel-img">
+                        <div class="rel-info">
+                            <div class="rel-text">
+                                <h4>Bretes a la par</h4>
+                                <p>Solución ideal para rodeos chicos.</p>
+                            </div>
+                            <a href="#" class="rel-btn">Ver más ➔</a>
+                        </div>
+                    </div>
+                    <div class="rel-card">
+                        <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80" alt="Bretes autoportantes" class="rel-img">
+                        <div class="rel-info">
+                            <div class="rel-text">
+                                <h4>Bretes autoportantes</h4>
+                                <p>Comodidad y eficiencia sin anclajes.</p>
+                            </div>
+                            <a href="#" class="rel-btn">Ver más ➔</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>

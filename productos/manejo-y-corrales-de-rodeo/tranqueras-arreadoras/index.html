@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranqueras Arreadoras | Rodeg</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/catalog-grid.css">
+</head>
+<body>
+    
+    {{> header/header }}
+
+    <main class="page-catalog">
+        
+        <!-- CABECERA LIMPIA Y CENTRADA -->
+        <section class="category-header">
+            <div class="container">
+                <h1>Tranqueras arreadoras</h1>
+                <p>Arreo tranquilo y sin esfuerzo para que las vacas entren solas.</p>
+            </div>
+        </section>
+
+        <!-- CONTENEDOR CON SIDEBAR PEGADO A LA IZQUIERDA -->
+        <div class="catalog-container">
+            
+            <aside class="sidebar">
+                <!-- MIGA DE PAN (BREADCRUMB) CON LA RAMIFICACIÓN COMPLETA -->
+                <div class="breadcrumb">
+                    <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                    <a href="/productos/manejo-y-corrales-de-rodeo/">3. Manejo y corrales</a> &nbsp;›&nbsp; 
+                    <span class="current">Tranqueras arreadoras</span>
+                </div>
+
+                <p class="nav-title">Categorías</p>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <div class="main-content">
+                <section class="product-section">
+                   
+                   <!-- GRILLA 3 COLUMNAS -->
+                   <div class="product-grid">
+                        
+                        <!-- 1. Manuales -->
+                        <div class="product-card auto-reveal" id="tranqueras-manuales">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80" alt="Tranquera de arreo manual" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Tranquera de arreo manual</h3>
+                                <p class="product-slogan">Guiar a tus vacas nunca fue tan fácil y liviano.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/manual/index.html" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Tranqueras manuales">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Automáticas -->
+                        <div class="product-card auto-reveal" id="tranqueras-automaticas">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80" alt="Tranquera de arreo automática" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Tranqueras automáticas</h3>
+                                <p class="product-slogan">Se mueve sola sobre un riel motorizado, achicando el corral mientras vos seguis ordeñando.</p>
+                                
+                                <div class="product-actions">
+                                    <a href="/productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/automatica/index.html" class="btn-ver-mas">Ver más</a>
+                                    <button class="btn-add-list-small add-icon-btn" data-product="Tranqueras automáticas">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    {{> footer/footer }}
+    
+    <div id="toast" class="toast">
+        <p class="toast-title" id="toast-title"></p>
+        <p class="toast-msg">Agregado a tu lista de cotización.</p>
+    </div>
+
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/catalog-grid.js"></script>
+</body>
+</html>
