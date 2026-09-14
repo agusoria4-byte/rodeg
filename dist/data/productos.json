@@ -1,0 +1,86 @@
+[
+    {
+        "id": "directo-tarro-portatil",
+        "nombre": "Directo al tarro portátil (DTP)",
+        "descripcion": "Ordeñe donde haga falta, sin instalación fija.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/ordeno/equipos-completos/dtp/"
+    },
+    {
+        "id": "bretes-cabras-ovejas",
+        "nombre": "Bretes para cabras y ovejas",
+        "descripcion": "Infraestructura diseñada a medida para ordeño.",
+        "imagen": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80",
+        "url": "/productos/bretes/#bretes-cabras"
+    },
+    {
+        "id": "pulsador-rg3",
+        "nombre": "Pulsador RG-3",
+        "descripcion": "Comando confiable y exacto.",
+        "imagen": "https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/pulsador-rg3/index.html"
+    },
+    {
+        "id": "directo-tarro-estacionario",
+        "nombre": "Directo al tarro estacionario (DTE)",
+        "descripcion": "La confianza de un equipo fijo para rodeos medianos.",
+        "imagen": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80",
+        "url": "/productos/ordeno/equipos-completos/dte/"
+    },
+    {
+        "id": "maquinas-cabras-ovejas",
+        "nombre": "Máquinas para cabras y ovejas",
+        "descripcion": "Contención a medida para pequeños rumiantes.",
+        "imagen": "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500&q=80",
+        "url": "/productos/ordeno/equipos-completos/cabras-y-ovejas/index.html"
+    },
+    {
+        "id": "millenium-magna",
+        "nombre": "Millenium Magna",
+        "descripcion": "Para tambos de alta producción.",
+        "imagen": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80",
+        "url": "/productos/ordeno/equipos-completos/millenium-magna/"
+    },
+    {
+        "id": "global-flow-control",
+        "nombre": "Global Flow Control",
+        "descripcion": "Medición y gestión eficiente del ordeño.",
+        "imagen": "/public/img/tecnologia/global-flow-control-rodeg.webp",
+        "url": "/productos/ordeno/sistemas-y-repuestos/global-flow-control/index.html"
+    },
+    {
+        "id": "ordenadora-dtp",
+        "nombre": "Ordeñadora DTP",
+        "descripcion": "Ordeñá donde haga falta.",
+        "imagen": "https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80",
+        "url": "/productos/ordeno/equipos-completos/dtp/index.html"
+    },
+    {
+        "id": "millenium-estandar",
+        "nombre": "Millenium Estándar",
+        "descripcion": "Para rodeos en crecimiento.",
+        "imagen": "https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80",
+        "url": "/productos/ordeno/equipos-completos/millenium/index.html"
+    },
+    {
+        "id": "grupos-pz3",
+        "nombre": "Grupos PZ-3",
+        "descripcion": "Flujo constante y rápido.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/grupo-de-ordeño-pz-3/index.html"
+    },
+    {
+        "id": "mp-2700",
+        "nombre": "Ordeñadora MP 2700",
+        "descripcion": "Alta eficiencia para establecimientos de línea media.",
+        "imagen": "/public/img/tecnologia/sala-rotativa.webp",
+        "url": "/productos/ordeno/equipos-completos/mp2700/"
+    },
+    {
+        "id": "grupo-rmax",
+        "nombre": "Grupo de ordeño R-MAX",
+        "descripcion": "Máximo confort animal y rápido escurrido.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/grupo-de-ordeño-r-max/index.html"
+    }
+]
