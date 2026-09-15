@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema anti-estrés | Rodeg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/pages/product-detail.css"> 
+</head>
+<body>
+    {{> header/header }}
+
+    <main>
+        <div class="container product-page-container" style="padding-top: 2rem;">
+            
+            <div class="breadcrumb" style="margin-bottom: 2rem;">
+                <a href="/categorias.html">Soluciones</a> &nbsp;›&nbsp; 
+                <a href="/productos/confort-animal/">Confort Animal</a> &nbsp;›&nbsp; 
+                <span class="current">Sistema anti-estrés</span>
+            </div>
+
+            <div class="product-hero auto-reveal">
+                <div class="hero-gallery">
+                    <div class="main-image-container">
+                        <img id="main-gallery-img" src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=1200&q=80" alt="Sistema anti-estrés">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" class="gal-thumb active" alt="Vista principal">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <h1>Sistema anti-estrés</h1>
+                    <p class="hero-slogan">Menos estrés calórico, más litros en el tanque.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Frena la caída de producción por calor actuando de manera preventiva antes de que el estrés calórico afecte al rodeo.</li>
+                        <li>Combo térmico de alta eficiencia que combina aspersión de agua de bajo consumo con ventilación forzada.</li>
+                        <li>Impacto positivo en la reproducción, manteniendo los índices de fertilidad y la salud general de tus vacas en niveles óptimos.</li>
+                    </ul>
+
+                    <span class="variant-title">Tipo: <strong id="variant-name" style="color: var(--color-black);">Aspersión + Ventilación</strong></span>
+                    <div class="variant-thumbnails">
+                        <a href="#" class="variant-thumb active" data-name="Aspersión + Ventilación">
+                            <img src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=150&q=80" alt="Aspersión">
+                        </a>
+                    </div>
+
+                    <div class="action-links-inline">
+                        <button id="btn-toggle-detalles" class="action-link">Ver detalles</button>
+                    </div>
+                    
+                    <div id="seccion-detalles" style="display: none; padding-bottom: 1.5rem;">
+                        <p style="color: #444; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                            Cuando la cantidad de calor que reciben los animales es mayor que su capacidad para disiparlo, entran en estrés calórico: aumenta el ritmo respiratorio, el consumo de agua y la transpiración, mientras baja el consumo de alimentos, la producción y la eficiencia reproductiva. El estrés es producto de la combinación entre temperatura y humedad ambiente, con apenas 23,5°C y 75% de humedad ya aparecen los primeros síntomas.<br><br>
+                            El sistema combina aspersores y ventiladores para refrescar el corral de espera durante 20 a 30 minutos antes de cada ordeño, usando aspersores de bajo consumo con gotas grandes que mojan bien la piel del animal. Se recomienda una superficie de al menos 3 m² por animal (hasta 5 m² en zonas de mayor estrés), con buena provisión de sombra y agua fresca.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://wa.me/5493401421075?text=Hola,%20quiero%20pedir%20cotizacion%20sobre%20el%20Sistema%20anti-estres." target="_blank" class="btn-consult-dark">Consultar ahora</a>
+                    </div>
+                    
+                    <button class="link-add-list" onclick="window.addProductToCart('Sistema anti-estrés')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Agregar a mi lista de productos
+                    </button>
+                </div>
+            </div>
+
+            <div class="specs-section auto-reveal">
+                <h2>Características técnicas</h2>
+                <div class="specs-row">
+                    <div class="spec-minimal">
+                        <strong>Función</strong>
+                        <span>Alivio térmico y control del estrés calórico.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Componentes del sistema</strong>
+                        <span>Aspersores/difusores de bajo consumo + ventiladores de alto caudal.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Superficie recomendada</strong>
+                        <span>3 a 5 m² por animal en corral de espera.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Momento de uso</strong>
+                        <span>20 a 30 min antes de cada ordeño.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Especificaciones técnicas (Motores y picos)</strong>
+                        <span>Bombas de agua de alto rendimiento potencia desde 1 a 3 HP de acuerdo al tamaño del corral. Picos difusores de diseño específico con cono de difusión regulable. Ventiladores: R FAN 1240, R FAN 1300 o la línea Rodeg de acero inoxidable de 1100, 1400 y 1600 mm de diámetro.</span>
+                    </div>
+                    <div class="spec-minimal">
+                        <strong>Origen</strong>
+                        <span>Diseño RODEG</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-full-dark auto-reveal">
+                <div class="product-page-container">
+                    <div class="how-it-works-layout">
+                        <div>
+                            <h2>Mirá el paso a paso</h2>
+                            <p>Enfriamiento evaporativo para cuidar el confort térmico.</p>
+                            
+                            <div class="accordion-dark" id="how-it-works-accordion">
+                                <details name="funcionamiento" open data-img="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80">
+                                    <summary>1. Activación preventiva</summary>
+                                    <div class="accordion-content">El sistema se pone en marcha en el corral de espera cuando las condiciones ambientales superan el umbral de confort, adelantándose al impacto del calor.</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=800&q=80">
+                                    <summary>2. Aspersión y ventilación combinadas</summary>
+                                    <div class="accordion-content">Los aspersores de bajo consumo mojan la piel del animal con gotas grandes, mientras los ventiladores ayudan a evaporar esa humedad, generando el efecto refrescante (enfriamiento evaporativo).</div>
+                                </details>
+                                <details name="funcionamiento" data-img="https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=800&q=80">
+                                    <summary>3. Ingreso relajado al ordeño</summary>
+                                    <div class="accordion-content">Tras un ciclo de 20 a 30 minutos, el rodeo entra a la sala totalmente refrescado, tranquilo y con un flujo de leche óptimo, evitando el nerviosismo durante la rutina de trabajo.</div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="how-it-works-img">
+                            <img id="how-it-works-display" src="https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=800&q=80" alt="Paso a paso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-section auto-reveal">
+                <h2>Productos Relacionados</h2>
+                <div class="carousel-mockup" id="contenedor-relacionados" data-ids="ventiladores-rfan, corrales-de-espera"></div>
+            </div>
+
+        </div> 
+    </main> 
+
+    {{> footer/footer }}
+    <script type="module" src="/src/js/global.js"></script>
+    <script type="module" src="/src/js/pages/product-detail.js"></script>
+</body>
+</html>
