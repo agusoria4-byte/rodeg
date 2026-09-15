@@ -45,7 +45,7 @@
         "id": "global-flow-control",
         "nombre": "Global Flow Control",
         "descripcion": "Medición y gestión eficiente del ordeño.",
-        "imagen": "/public/img/tecnologia/global-flow-control-rodeg.webp",
+        "imagen": "/img/tecnologia/global-flow-control-rodeg.webp",
         "url": "/productos/ordeno/sistemas-y-repuestos/global-flow-control/index.html"
     },
     {
@@ -73,7 +73,7 @@
         "id": "mp-2700",
         "nombre": "Ordeñadora MP 2700",
         "descripcion": "Alta eficiencia para establecimientos de línea media.",
-        "imagen": "/public/img/tecnologia/sala-rotativa.webp",
+        "imagen": "/img/tecnologia/sala-rotativa.webp",
         "url": "/productos/ordeno/equipos-completos/mp2700/"
     },
     {
@@ -82,5 +82,173 @@
         "descripcion": "Máximo confort animal y rápido escurrido.",
         "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
         "url": "/productos/ordeno/sistemas-y-repuestos/grupo-de-ordeño-r-max/index.html"
+    },
+    {
+        "id": "regulacion-de-vacio",
+        "nombre": "Regulación de vacío",
+        "descripcion": "Control milimétrico del sistema.",
+        "imagen": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/regulacion-de-vacio/"
+    },
+    {
+        "id": "pulmones-de-vacio",
+        "nombre": "Pulmones de vacío",
+        "descripcion": "Estabilidad y reserva garantizada.",
+        "imagen": "https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/pulmones-de-vacio/"
+    },
+    {
+        "id": "extractor-cra4g",
+        "nombre": "Extractor CRA-4G",
+        "descripcion": "El complemento automático ideal.",
+        "imagen": "https://images.unsplash.com/photo-1544383835-bca2bc6f555c?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/extractor-automatico-cra4g/"
+    },
+    {
+        "id": "electrobombas-centrifugas",
+        "nombre": "Electrobombas centrífugas",
+        "descripcion": "Descarga rápida y eficiente.",
+        "imagen": "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/electrobombas-centrifugas/"
+    },
+    {
+        "id": "unidades-finales",
+        "nombre": "Unidades finales",
+        "descripcion": "Recibo higiénico de la leche.",
+        "imagen": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/unidades-finales/"
+    },
+    {
+        "id": "controles-de-nivel",
+        "nombre": "Controles de nivel",
+        "descripcion": "Activación automática y segura.",
+        "imagen": "https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/controles-de-nivel/"
+    },
+    {
+        "id": "smart-ear-tag",
+        "nombre": "SMART EAR TAG",
+        "descripcion": "Identificación y monitoreo.",
+        "imagen": "/img/tecnologia/smart-ear-tag.webp",
+        "url": "/productos/nuevas-tecnologias/smart-ear-tag/index.html"
+    },
+    {
+        "id": "salas-rotativas",
+        "nombre": "Salas rotativas",
+        "descripcion": "Alta capacidad de ordeño.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "#"
+    },
+    {
+        "id": "pezoneras-repuesto",
+        "nombre": "Pezoneras de repuesto",
+        "descripcion": "Mantenimiento clave para tu equipo.",
+        "imagen": "https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/pezoneras/index.html"
+    },
+    {
+        "id": "enfriadores-de-leche",
+        "nombre": "Enfriadores de leche",
+        "descripcion": "Almacenamiento seguro y térmico.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/enfriadores-de-leche/"
+    },
+    {
+        "id": "recuperadores-de-calor",
+        "nombre": "Recuperadores de calor",
+        "descripcion": "Aprovechamiento total de energía.",
+        "imagen": "https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80",
+        "url": "/productos/enfriadores-de-leche/#recuperadores"
+    },
+    {
+        "id": "mangueras-y-tubos",
+        "nombre": "Mangueras y tubos",
+        "descripcion": "Sistemas de lavado y conducción láctea.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/mangueras-y-tubos/index.html"
+    },
+    {
+        "id": "comando-frio-lavado",
+        "nombre": "Comando de frío y lavado por PLC",
+        "descripcion": "Gestión automatizada para tanques.",
+        "imagen": "https://images.unsplash.com/photo-1570525997233-a3d548ddfdd2?w=500&q=80",
+        "url": "/productos/enfriadores-de-leche/comando"
+    },
+    {
+        "id": "brazos-m18",
+        "nombre": "Brazos M-18 + CRA-4G",
+        "descripcion": "Automatización y ergonomía en la fosa.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/brazos-m18/"
+    },
+    {
+        "id": "brazo-m18-extractor",
+        "nombre": "Brazos M-18 + Extractor",
+        "descripcion": "Soporte y retiro automatizado.",
+        "imagen": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/brazo-m18/"
+    },
+    {
+        "id": "lavados-programables",
+        "nombre": "Lavados programables",
+        "descripcion": "Higiene asegurada y automatizada.",
+        "imagen": "https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/lavados-programables/"
+    },
+    {
+        "id": "sistemas-de-vacio",
+        "nombre": "Sistemas de vacío",
+        "descripcion": "Estabilidad total en línea.",
+        "imagen": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/sistemas-de-vacio/"
+    },
+    {
+        "id": "bombas-de-vacio",
+        "nombre": "Bombas de vacío",
+        "descripcion": "El corazón de la extracción.",
+        "imagen": "https://images.unsplash.com/photo-1616422285623-1433fb6c3a13?w=500&q=80",
+        "url": "/productos/ordeno/sistemas-y-repuestos/bombas-de-vacio/index.html"
+    },
+    {
+        "id": "enfriador-cisterna",
+        "nombre": "Enfriador tipo cisterna",
+        "descripcion": "Soluciones para grandes volúmenes.",
+        "imagen": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80",
+        "url": "/productos/enfriadores-de-leche/cisterna/"
+    },
+    {
+        "id": "cubas",
+        "nombre": "Cubas",
+        "descripcion": "Soluciones para volúmenes medios.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/enfriadores-de-leche/cubas/"
+    },
+    {
+        "id": "ventiladores-establos",
+        "nombre": "Ventiladores para establos",
+        "descripcion": "Línea de fabricación RODEG.",
+        "imagen": "https://images.unsplash.com/photo-1592982537447-6f233c706ba3?w=500&q=80",
+        "url": "/productos/confort-animal/"
+    },
+    {
+        "id": "sistemas-antiestres",
+        "nombre": "Sistemas antiestrés",
+        "descripcion": "Aspersión y nebulización.",
+        "imagen": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=500&q=80",
+        "url": "/productos/confort-animal/"
+    },
+    {
+        "id": "taxi-milk",
+        "nombre": "Taxi Milk",
+        "descripcion": "Dosifica la leche justa, a la temperatura justa.",
+        "imagen": "/img/tecnologia/taxi-milk-autopropulsado-rodeg.webp",
+        "url": "/productos/alimentacion-terneros/taxi-autopropulsado/index.html"
+    },
+    {
+        "id": "r-fan",
+        "nombre": "Ventiladores R-FAN",
+        "descripcion": "Cuando baja el calor, sube la producción.",
+        "imagen": "/img/tecnologia/ventilador-r-fan-1240-rodeg.webp",
+        "url": "/productos/confort-animal/r-fan/index.html"
     }
 ]

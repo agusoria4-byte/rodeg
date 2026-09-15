@@ -108,7 +108,7 @@ async function cargarProductosRelacionados() {
 
     try {
         // Apuntamos a la nueva carpeta que creaste
-        const response = await fetch('/public/data/productos.json'); 
+        const response = await fetch('/data/productos.json'); 
         const todosLosProductos = await response.json();
 
         let htmlTarjetas = '';

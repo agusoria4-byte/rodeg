@@ -1,0 +1,12 @@
+function e(){let e=document.getElementById(`btn-toggle-detalles`),t=document.getElementById(`seccion-detalles`);e&&t&&e.addEventListener(`click`,function(e){e.preventDefault(),t.style.display===`none`?(t.style.display=`block`,this.textContent=`Ocultar detalles`):(t.style.display=`none`,this.textContent=`Ver detalles`)});let n=document.querySelectorAll(`.variant-thumb`),r=document.getElementById(`variant-name`);n.length>0&&r&&n.forEach(e=>{e.addEventListener(`mouseenter`,()=>{r.textContent=e.getAttribute(`data-name`)}),e.addEventListener(`mouseleave`,()=>{let e=document.querySelector(`.variant-thumb.active`);e&&(r.textContent=e.getAttribute(`data-name`))})});let i=document.querySelectorAll(`#how-it-works-accordion details`),a=document.getElementById(`how-it-works-display`);i.length>0&&a&&i.forEach(e=>{e.addEventListener(`toggle`,t=>{e.open&&(a.style.opacity=.5,setTimeout(()=>{a.src=e.getAttribute(`data-img`),a.style.opacity=1},150))})});let o=document.querySelectorAll(`.gal-thumb`),s=document.getElementById(`main-gallery-img`);o.length>0&&s&&o.forEach(e=>{e.addEventListener(`click`,function(){s.style.opacity=.5,setTimeout(()=>{s.src=this.src,s.style.opacity=1},150),o.forEach(e=>e.classList.remove(`active`)),this.classList.add(`active`)})});let c=document.querySelector(`.specs-row`),l=document.getElementById(`btn-more-specs`);c&&l&&(c.querySelectorAll(`.spec-minimal`).length>4&&(l.style.display=`block`),l.addEventListener(`click`,()=>{c.classList.toggle(`show-all`),c.classList.contains(`show-all`)?l.textContent=`Ver menos`:l.textContent=`Ver más características`}))}async function t(){let e=document.getElementById(`contenedor-relacionados`);if(!e)return;let t=e.getAttribute(`data-ids`);if(!t)return;let n=t.split(`,`).map(e=>e.trim());try{let t=await(await fetch(`/data/productos.json`)).json(),r=``;n.forEach(e=>{let n=t.find(t=>t.id===e);n&&(r+=`
+                <div class="rel-card">
+                    <img src="${n.imagen}" alt="${n.nombre}" class="rel-img">
+                    <div class="rel-info">
+                        <div class="rel-text">
+                            <h4>${n.nombre}</h4>
+                            <p>${n.descripcion}</p>
+                        </div>
+                        <a href="${n.url}" class="rel-btn">Ver más ➔</a>
+                    </div>
+                </div>
+                `)}),e.innerHTML=r}catch(e){console.error(`Error cargando los productos relacionados:`,e)}}document.addEventListener(`DOMContentLoaded`,()=>{e(),t()});

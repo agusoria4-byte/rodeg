@@ -3,7 +3,7 @@ import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/',
+  base: '/rodeg/',
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'src/components'),
@@ -20,12 +20,12 @@ export default defineConfig({
 
         // --- CATEGORÍAS GENERALES ---
         enfriado: resolve(__dirname, 'productos/enfriadores-de-leche/index.html'),
-        bretes: resolve(__dirname, 'productos/bretes/index.html'),
+        // bretes: omitido por ahora
         manejo: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/index.html'),
         alimentacionOrdeno: resolve(__dirname, 'productos/alimentacion-ordeno/index.html'),
         alimentacionTerneros: resolve(__dirname, 'productos/alimentacion-terneros/index.html'),
         confort: resolve(__dirname, 'productos/confort-animal/index.html'),
-        pasteurizadores: resolve(__dirname, 'productos/pasteurizadores/index.html'),
+        // pasteurizadores: omitido por ahora
         nuevasTecnologias: resolve(__dirname, 'productos/nuevas-tecnologias/index.html'),
 
         // --- ENFRIADORES DE LECHE (SUB-CATEGORÍAS) ---
@@ -33,7 +33,7 @@ export default defineConfig({
         frioCisterna: resolve(__dirname, 'productos/enfriadores-de-leche/enfriador-cisterna/index.html'),
         frioRecuperador: resolve(__dirname, 'productos/enfriadores-de-leche/recuperador-de-calor/index.html'),
         frioSilos: resolve(__dirname, 'productos/enfriadores-de-leche/silos-de-almacenamiento/index.html'),
-        frioInstantaneo: resolve(__dirname, 'productos/enfriadores-de-leche/sistema-de-frio-instantaneo/index.html'),
+        frioInstantaneo: resolve(__dirname, 'productos/enfriadores-de-leche/sistema-de-enfriamiento-instantaneo/index.html'), // Corregido para que coincida con el header
         
         frioCubas: resolve(__dirname, 'productos/enfriadores-de-leche/cubas/index.html'),
         frioCubasAbiertas: resolve(__dirname, 'productos/enfriadores-de-leche/cubas/abiertas/index.html'),
@@ -43,11 +43,20 @@ export default defineConfig({
         taxiArrastre: resolve(__dirname, 'productos/alimentacion-terneros/taxi-arrastre/index.html'),
         taxiAutopropulsado: resolve(__dirname, 'productos/alimentacion-terneros/taxi-autopropulsado/index.html'),
         taxiManual: resolve(__dirname, 'productos/alimentacion-terneros/taxi-manual/index.html'),
+        sistemaDosificacionLeche: resolve(__dirname, 'productos/alimentacion-terneros/sistema-de-dosificacion/index.html'), // NUEVO
+        carrosTransporteLeche: resolve(__dirname, 'productos/alimentacion-terneros/carros-de-transporte-de-leche/index.html'), // NUEVO
 
         // --- CONFORT ANIMAL (SUB-CATEGORÍAS) ---
         confortRfan: resolve(__dirname, 'productos/confort-animal/r-fan/index.html'),
+        confortAntiestres: resolve(__dirname, 'productos/confort-animal/sistema-antiestres/index.html'), // NUEVO
 
         // --- MANEJO Y CORRALES (SUB-CATEGORÍAS) ---
+        manejoCorralesCategoria: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/manejo-y-corrales-de-rodeo/index.html'), // NUEVO
+        corralesEspera: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/corrales-de-espera/index.html'), // NUEVO
+        corralesCirculares: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/corrales-circulares/index.html'), // NUEVO
+        corralesPerimetrales: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/corrales-perimetrales/index.html'), // NUEVO
+        puertasApartadoras: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/puertas/index.html'), // NUEVO
+        
         tranquerasCategoria: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/index.html'),
         tranquerasAutomatica: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/automatica/index.html'),
         tranquerasManual: resolve(__dirname, 'productos/manejo-y-corrales-de-rodeo/tranqueras-arreadoras/manual/index.html'),
@@ -79,6 +88,7 @@ export default defineConfig({
         repuestosLavados: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/lavados-programables/index.html'),
         repuestosOrdenador: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/ordenador-individual/index.html'),
         repuestosPulmones: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/pulmones-de-vacio/index.html'),
+        repuestosconjuntoGeneradorVacio: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/conjunto-generador-de-vacio/index.html'),
         repuestosPulsadorRg3: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/pulsador-rg3/index.html'),
         repuestosRegulacionVacio: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/regulacion-de-vacio/index.html'),
         repuestosUnidadesFinales: resolve(__dirname, 'productos/ordeno/sistemas-y-repuestos/unidades-finales/index.html'),
